@@ -1,0 +1,40 @@
+#page-landing {
+    justify-content: center;
+}
+
+#container {
+    background-color: var(--color-green-black);
+    text-align: center;
+
+    color: white;
+
+    padding: 9rem 0 0 0;
+}
+
+.title  {
+    font-family: 'Righteous', cursive;
+    font-size: 4rem;
+}
+
+.location {
+    font-family: 'Inter', sans-serif;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+}
+
+.section p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 5rem;
+    width: 30rem;
+
+    margin: 3rem 0 0 calc(50% - 15rem);
+}
+
+.buttons {
+    margin-top: 4rem;
+}
+
+.buttons a {
+    height: 100%;
+}
+
