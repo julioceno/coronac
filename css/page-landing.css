@@ -8,33 +8,78 @@
 
     color: white;
 
-    padding: 9rem 0 0 0;
+    padding: 10rem 0 0 0;
 }
 
 .title  {
     font-family: 'Righteous', cursive;
-    font-size: 4rem;
+    font-size: 5rem;
+    margin-bottom: .5rem;
 }
 
 .location {
     font-family: 'Inter', sans-serif;
-    font-size: 2.5rem;
-    margin-top: 2rem;
+    font-size: 3rem;
 }
 
 .section p {
     font-family: 'Nunito', sans-serif;
-    font-size: 5rem;
+    font-size: 5.2rem;
     width: 30rem;
 
-    margin: 3rem 0 0 calc(50% - 15rem);
+    margin: 3.5rem 0 3rem calc(50% - 15rem);
 }
 
 .buttons {
-    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
 }
 
-.buttons a {
-    height: 100%;
+
+.buttons a + a {
+    margin-left: 2.5rem;
 }
+
+
+.buttons a {
+    height: 4rem;
+    width: 15rem;
+    border-radius: 1rem;
+    
+    color: rgba(241, 241, 241, 0.9);
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    text-decoration: none;
+    transition: background .1s;
+}
+
+.buttons a:hover {
+    background-color: #2ec1abcb;
+}
+
+.buttons a:focus {
+    border: .2rem solid #333c4a9c;
+}
+
+/*  */
+
+.buttons .button-cases {
+    font-size: 2rem;
+    letter-spacing: .1rem;
+    background-color: #35CB91;
+    
+}
+
+.buttons .button-previnition {
+    font-size: 1.4rem;
+    letter-spacing: .1rem;
+    background-color: #65CBA5;
+    
+}
+
 
