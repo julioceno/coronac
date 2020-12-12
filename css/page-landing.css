@@ -4,8 +4,8 @@
 
 #container {
     background-color: var(--color-green-black);
+    
     text-align: center;
-
     color: white;
 
     padding: 10rem 0 0 0;
@@ -14,12 +14,15 @@
 .title  {
     font-family: 'Righteous', cursive;
     font-size: 5rem;
-    margin-bottom: .5rem;
+    margin-bottom: .8rem;
+
+    animation-delay: 50ms;
 }
 
 .location {
     font-family: 'Inter', sans-serif;
-    font-size: 3rem;
+    font-size: 2.5rem;
+    animation-delay: 100ms;
 }
 
 .section p {
@@ -28,11 +31,15 @@
     width: 30rem;
 
     margin: 3.5rem 0 3rem calc(50% - 15rem);
+
+    animation-delay: 150ms;
 }
 
 .buttons {
     display: flex;
     justify-content: center;
+    animation-delay: 200ms;
+
 }
 
 
@@ -79,7 +86,23 @@
     font-size: 1.4rem;
     letter-spacing: .1rem;
     background-color: #65CBA5;
-    
 }
 
 
+@keyframes up{
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-up {
+    animation-name: up;
+    animation-duration: 200ms;
+    animation-fill-mode: backwards;
+}
