@@ -1,27 +1,28 @@
-#page-landing {
-    justify-content: center;
-}
-
 #container {
     background-color: var(--color-green-black);
     
-    text-align: center;
     color: white;
 
-    padding: 10rem 0 0 0;
+    padding: 10rem 5rem  0;
+
+}
+
+.header {
+    text-align: center;
 }
 
 .title  {
     font-family: 'Righteous', cursive;
     font-size: 5rem;
     margin-bottom: .8rem;
-
+    font-weight: 300;
     animation-delay: 50ms;
 }
 
 .location {
     font-family: 'Inter', sans-serif;
     font-size: 2.5rem;
+
     animation-delay: 100ms;
 }
 
@@ -29,8 +30,9 @@
     font-family: 'Nunito', sans-serif;
     font-size: 5.2rem;
     width: 30rem;
-
     margin: 3.5rem 0 3rem calc(50% - 15rem);
+    text-align: center;
+
 
     animation-delay: 150ms;
 }
@@ -38,15 +40,13 @@
 .buttons {
     display: flex;
     justify-content: center;
+    
     animation-delay: 200ms;
-
 }
-
 
 .buttons a + a {
     margin-left: 2.5rem;
 }
-
 
 .buttons a {
     height: 4rem;
@@ -56,6 +56,7 @@
     color: rgba(241, 241, 241, 0.9);
     font-family: 'Inter', sans-serif;
     font-weight: bold;
+    letter-spacing: .1rem;
     
     display: flex;
     justify-content: center;
@@ -73,20 +74,61 @@
     border: .2rem solid #333c4a9c;
 }
 
-/*  */
+
 
 .buttons .button-cases {
     font-size: 2rem;
-    letter-spacing: .1rem;
     background-color: #35CB91;
     
 }
 
 .buttons .button-previnition {
     font-size: 1.4rem;
-    letter-spacing: .1rem;
     background-color: #65CBA5;
 }
+
+
+@media (min-width: 760px ) {
+    #container {
+            background-color: var(--color-green-black);
+            
+            text-align: center;
+            color: white;
+        
+            padding: 8rem 3rem  0;
+        
+    }
+
+    .header {
+        text-align: left;
+    }
+
+    .title  {
+        font-size: 7.5rem;
+        font-size: 6vw;
+        font-size: clamp(6rem, 6vw, 7.5rem);
+    }
+    
+    .location {
+        margin-left: 22rem;
+        margin: 0 0 0 clamp(16rem, 17vw, 22rem);
+    }
+    
+    .section p {
+        margin: clamp(5%, 20vh, 20rem) 0 0;
+
+        font-size: 5vw;
+        font-size: clamp(5rem, 5vw, 6rem);
+
+    }
+    
+
+
+}
+
+
+
+
 
 
 @keyframes up{
