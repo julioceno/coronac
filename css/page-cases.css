@@ -1,0 +1,29 @@
+
+
+#page-cases {
+    background: rgba(255, 255, 255, 0.7);
+    height: 100%;
+}
+
+#gradient {
+    clip-path: polygon(0 0, 100% 0, 100% 32%, 0 85%);
+    background-color: #28DF99;    
+    height: 50rem;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+
+    position: absolute;
+    top: 1px;
+}
+
+.section { 
+    flex: 1;
+} 
+
+.footer {
+    background-color: red;
+}

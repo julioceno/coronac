@@ -1,21 +1,24 @@
-#container {
+#page-landing {
     background-color: var(--color-green-black);
-    
+
+}
+
+#container {
     color: white;
-
-    padding: 10rem 5rem  0;
-
+    padding: 9rem 0 0;
+    margin: 0 5rem ;
 }
 
 .header {
     text-align: center;
 }
 
-.title  {
+.logo  {
     font-family: 'Righteous', cursive;
     font-size: 5rem;
-    margin-bottom: .8rem;
-    font-weight: 300;
+    margin-bottom: .5rem;
+    font-weight: 200;
+
     animation-delay: 50ms;
 }
 
@@ -26,7 +29,7 @@
     animation-delay: 100ms;
 }
 
-.section p {
+.section h3 {
     font-family: 'Nunito', sans-serif;
     font-size: 5.2rem;
     width: 30rem;
@@ -50,7 +53,7 @@
 
 .buttons a {
     height: 4rem;
-    width: 15rem;
+    width: 16rem;
     border-radius: 1rem;
     
     color: rgba(241, 241, 241, 0.9);
@@ -90,46 +93,60 @@
 
 @media (min-width: 760px ) {
     #container {
-            background-color: var(--color-green-black);
             
             text-align: center;
             color: white;
         
-            padding: 8rem 3rem  0;
-        
-    }
+            padding: 5rem 4rem  0;
+
+            background-image: url(../public/images/doctors.svg);
+            background-repeat: no-repeat;
+            background-size: min(55%, 53rem);
+            background-position: min(100%, 50rem)  30%;
+        }
 
     .header {
-        text-align: left;
+        text-align: initial;
     }
 
-    .title  {
+    .logo  {
         font-size: 7.5rem;
         font-size: 6vw;
-        font-size: clamp(6rem, 6vw, 7.5rem);
+        font-size: clamp(6rem, 6vw, 7rem);
     }
     
     .location {
         margin-left: 22rem;
-        margin: 0 0 0 clamp(16rem, 17vw, 22rem);
+        margin: 0 0 0 clamp(16rem, 17vw, 20.9rem);
     }
     
-    .section p {
-        margin: clamp(5%, 20vh, 20rem) 0 0;
-
-        font-size: 5vw;
-        font-size: clamp(5rem, 5vw, 6rem);
-
+    .section h3 {
+        margin: clamp(4%, 14vh, 13rem) 0 0;
+        font-size: clamp(4rem, 4.4vw, 5.5rem);
+        text-align: initial;
     }
     
+    .buttons {
+        margin-top: clamp(3rem, 2%, 2rem);
+        padding: 1rem 0 0 19rem;
+    }
 
+    .buttons a {
+        height: clamp(4.3rem, 7vh, 5rem);
+    }
+
+    .buttons .button-cases {
+        width: clamp(13rem, 16vw, 18rem);
+        font-size: clamp(2rem, 2vw, 2.3rem);
+    }
+    
+    .buttons .button-previnition {
+        width: clamp(15rem, 16vw, 18rem);
+        font-size: clamp(1.3rem, 1.5rem , 1.8rem);
+    }
+    
 
 }
-
-
-
-
-
 
 @keyframes up{
     from {
