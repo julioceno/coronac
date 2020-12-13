@@ -26,9 +26,23 @@
         <header class="header">
             <h1 title="logo">Coronac</h1>
 
-            <div class="menu-hamburguer">
+            <div id="menu-bar">
                 
+                <div id="menu" onclick="checkedMenu()">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                </div>
+
+                <ul class="nav" id="nav">
+                    <li> <a href="#">Como se cuidar</a></li>
+                    <li> <a href="#">Contato</a></li>
+                    <li> <a href="#">Sobre</a></li>
+                    <li> <a href="#">Repositório</a></li>
+                </ul>
             </div>
+
+            <div class="menu-bg" id="menu-bg"></div>
         </header>
 
     <section class="section">
@@ -42,4 +56,5 @@
 
 </div>
 </body>
+<script src="script.js"></script>
 </html>

@@ -1,11 +1,128 @@
 .header {
+    height: 8rem;
+    width: 100vw;
+    padding: 0 2rem;
 
-    height: 40rem;
 
-    padding: 2rem 0;
-    color: black;
+    color: #fff;
     font-family: 'Righteous', cursive;
+    font-size: 1.8rem;
+    letter-spacing: .2rem;
 
-    font-weight: normal;
-    font-size: 25.45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ /* Menu hamburguer  */
+
+ #menu {
+     width: 5rem;
+     height: 5rem;
+     margin: 0 0 0 2px;
+     cursor: pointer;
+ }
+ body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #373c56;
+}
+
+:root {
+    font-size: 62.5%
+}
+
+#menu {
+    width: 5rem;
+    height: 5rem;
+    margin: 30px 0 0 20px;
+    cursor: pointer;
+}
+
+.bar {
+    height: .5rem;
+    width: 100%;
+    background-color: #fff;
+    display: block;
+    border-radius: .2rem;
+    transition: 0.3s ease;
+}
+
+#bar1 {
+    transform: translateY(-4px);
+}
+
+#bar3 {
+    transform: translateY(4px);
+}
+
+
+.nav li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.nav li a:hover {
+    font-weight: bold;
+}
+
+.nav li {
+    list-style: none;
+    padding: 16px 0;
+}
+
+.nav {
+    padding: 0;
+    margin: 0 20px;
+    transition: 0.3s ease;
+    display: none;
+}
+
+#menu-bar {
+    position:absolute;
+    top: 0;
+    right: 0;
+}
+
+.menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 20px ;
+    background: #2ec1ac;
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+#menu-bar {
+    z-index: 2;
+}
+
+.checked-bg {
+    width: 550px;
+    height: 750px;
+    transform: translate(7rem, -10rem);
+
+}
+
+.checked .bar {
+    background-color: white;
+
+    
+}
+
+.checked #bar1 {
+    transform: translateY(4px) rotateZ(-45deg); 
+}
+
+.checked #bar3 {
+    transform: translateY(-6px) rotate(45deg);
+} 
+
+.checked #bar2 {
+    opacity: 0;
+}
+
+.checked {
+    display: block;
 }
