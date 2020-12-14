@@ -93,11 +93,9 @@
     transition: 0.3s ease;
 }
 
-
 #menu-bar { /*Isso vai deixar os elementos acima da bolinha rosa quando a mesma estiver ativa*/
     z-index: 2;
 }
-
 
 .checked-bg { /* Largura/altura e posição da bolinha*/
     width: 65rem;
