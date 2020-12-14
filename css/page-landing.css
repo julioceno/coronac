@@ -1,13 +1,11 @@
 #page-landing {
     background-color: var(--color-green-black);
-
 }
 
 #container {
     color: white;
     padding: 9rem 0 0;
     margin: 0 5rem ;
-    overflow: hidden;
 
 }
 
