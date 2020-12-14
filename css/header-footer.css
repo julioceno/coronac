@@ -12,40 +12,34 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    overflow: hidden;
+
 }
 
  /* Menu hamburguer  */
 
- #menu {
-     width: 5rem;
-     height: 5rem;
-     margin: 0 0 0 2px;
-     cursor: pointer;
- }
- body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #373c56;
+.menu-container {
+    position: absolute;
+    right: 50px;
 }
 
-:root {
-    font-size: 62.5%
-}
-
-#menu {
-    width: 5rem;
-    height: 5rem;
-    margin: 30px 0 0 20px;
+#menu { /*Posicionamento do menu */
+    width: 35px;
+    height: 30px;
+    margin: 3rem 0 0 10rem;
     cursor: pointer;
 }
 
-.bar {
-    height: .5rem;
+.bar { /* tracinhos do menu */
+    height: 5px;
     width: 100%;
     background-color: #fff;
     display: block;
-    border-radius: .2rem;
-    transition: 0.3s ease;
+    border-radius: 1rem;
+    transition: 0.3s ease; /* Animação pra fazer um x*/
 }
+
 
 #bar1 {
     transform: translateY(-4px);
@@ -55,74 +49,76 @@
     transform: translateY(4px);
 }
 
-
 .nav li a {
     color: #fff;
     text-decoration: none;
-    font-size: 2rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.8rem
+
+    
 }
+
 
 .nav li a:hover {
     font-weight: bold;
 }
 
 .nav li {
-    list-style: none;
+    list-style: none; /* Tirar as bolinhas do li */
     padding: 16px 0;
 }
 
+
 .nav {
-    padding: 0;
-    margin: 0 20px;
     transition: 0.3s ease;
     display: none;
 }
 
 #menu-bar {
-    position:absolute;
+    position: absolute;
     top: 0;
     right: 0;
 }
 
+
 .menu-bg {
-    z-index: 1;
+    /* z-index: 1; */
     width: 0;
     height: 0;
     margin: 30px 0 20px 20px ;
-    background: #2ec1ac;
+    background: #2ec1abbd;
     border-radius: 50%;
     transition: 0.3s ease;
 }
 
-#menu-bar {
+
+#menu-bar { /*Isso vai deixar os elementos acima da bolinha rosa quando a mesma estiver ativa*/
     z-index: 2;
 }
 
-.checked-bg {
-    width: 550px;
-    height: 750px;
-    transform: translate(7rem, -10rem);
 
+.checked-bg { /* Largura/altura e posição da bolinha*/
+    width: 65rem;
+    height: 60rem;
+    transform: translate(70%, -30%); /* Deixa as bola emparelhada com o viewport*/
 }
 
-.checked .bar {
+.checked .bar { /* a class  checked será colocada no js | quando tiver com a classe checked deixe o menu branco*/
     background-color: white;
-
-    
 }
 
 .checked #bar1 {
-    transform: translateY(4px) rotateZ(-45deg); 
+    transform: translateY(4px) rotateZ(-45deg); /* Rotação da barra 1 quando estiver marcada*/
 }
 
 .checked #bar3 {
     transform: translateY(-6px) rotate(45deg);
 } 
 
-.checked #bar2 {
+.checked #bar2 { /* Removendo a barra 2 enquanto estiver marcado*/
     opacity: 0;
 }
 
-.checked {
+.checked { /* Isso faz com que o menu e as oções fiquem cada um em sua linha*/
     display: block;
-}
+} 
