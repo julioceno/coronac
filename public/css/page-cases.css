@@ -1,8 +1,5 @@
 #page-cases {
     background: rgba(255, 255, 255, 0.7);
-    min-height: 100%;
-    height: auto;
-    overflow-x: hidden;
 }
 
 #gradient {
@@ -24,6 +21,8 @@
     flex: 1;
     padding: 0 2rem;
 } 
+
+/* ... */
 
 .covid {
     margin: 5rem 0 0;
@@ -118,18 +117,6 @@
 }
 
 
-.place-information {
-    margin: 4rem 0 5rem;
-    background-color: #99F3BD;
-    width: 43rem;
-    height: 10rem;
-
-    border-radius: .50rem;
-
-    display: flex;
-
-    overflow: hidden;
-}
 
 .place-information div {
     width: 10rem;
@@ -149,8 +136,6 @@
 }
 
 .board {
-    position: absolute;
-    bottom: 10rem;
 
     width: 8rem;
     height: 2.5rem;
@@ -160,17 +145,33 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
-
+    
+    
     font-family: Righteous;
     font-size: 1rem;
-
+    
     color: #323232;
+
+    position: absolute;
+    bottom: 9rem;
+    
 }
 
-
-
 .place {
+
+}
+
+.place img {
+    margin: 2rem 0 0;
+    height: 5rem;
+}
+
+.place p {
+    margin: 2rem 0 0;
+    align-self: flex-end;
+
+    position: relative;
+    right: calc(50% - 2rem);
 }
 
 .confirmeds {
