@@ -22,7 +22,6 @@
     padding: 0 2rem;
 } 
 
-/* ... */
 
 .covid {
     margin: 5rem 0 0;
@@ -117,6 +116,20 @@
 }
 
 
+.place-information {
+    margin: 4rem 0 5rem;
+    background-color: #99F3BD;
+    width: 38rem;
+    height: 10rem;
+
+    border-radius: .50rem;
+
+    display: flex;
+
+
+    position: relative;
+    left: calc(50% - 21.5rem);
+}
 
 .place-information div {
     width: 10rem;
