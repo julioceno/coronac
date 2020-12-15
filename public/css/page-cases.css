@@ -132,15 +132,21 @@
 }
 
 .place-information div {
-    width: 10rem;
+    width: 9.5rem;
     height: 100%;
 
     display: flex;
     justify-content: center;
 }
 
+.place-information div {
+
+    font-size: 2rem;
+}
+
+
 .place-information div:nth-child(1) {
-    width: 13rem;
+    width: 12rem;
 }
 
 .place-information div + div {
@@ -171,20 +177,18 @@
 }
 
 .place {
-
 }
 
 .place img {
     margin: 2rem 0 0;
     height: 5rem;
+    
 }
 
 .place p {
     margin: 2rem 0 0;
     align-self: flex-end;
 
-    position: relative;
-    right: calc(50% - 2rem);
 }
 
 .confirmeds {
