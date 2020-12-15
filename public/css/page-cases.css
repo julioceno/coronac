@@ -117,119 +117,70 @@
     background-size: 60%;
 }
 
+
 .place-information {
-    margin: 4rem 0 5rem 0;
-
-    height: 10rem;
-    width: 40rem;
+    margin: 4rem 0 5rem;
     background-color: #99F3BD;
+    width: 43rem;
+    height: 10rem;
 
-    border-radius: 5px;
-
-    position: relative;
-    left: calc(50% - 20rem);
+    border-radius: .50rem;
 
     display: flex;
-    justify-content: space-between;
 
-
+    overflow: hidden;
 }
 
-.board {
-    width: 8rem;
-    height: 3rem;
-
-    position: absolute;
-    bottom: 8rem;
-
-    background: #E8E8E8;
-    border-radius: .2rem;
-
-    font-family: 'Righteous', cursive;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.3rem;
-    line-height: 10px;
-    text-align: center;
-    
-    color: #323232;
+.place-information div {
+    width: 10rem;
+    height: 100%;
 
     display: flex;
     justify-content: center;
-    align-items: center;
-    
+}
+
+.place-information div:nth-child(1) {
+    width: 13rem;
 }
 
 .place-information div + div {
     border-left: 2px solid rgba(132, 128, 128, 0.35);
-    padding-left: 2rem;
+
 }
 
-.place-information  .flag .board {
-    font-size: 2rem;
-}
+.board {
+    position: absolute;
+    bottom: 10rem;
 
-.place-information .flag {
-    height: 100%;
-    width: 12rem;
-
+    width: 8rem;
+    height: 2.5rem;
+    background: #E8E8E8;
+    border-radius: .2rem;
+    
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
-}
 
-.place-information .flag img{
-    width: 6.5rem;
-    margin-top: 2.5rem;
-}
-
-.place-information .flag p {
-    margin-bottom: .3rem;
-}
-
-
-.place-information p {
-    font-size: 1.6rem;
     font-family: Righteous;
-    font-style: normal;
-    font-weight: normal;
-    text-align: center;
+    font-size: 1rem;
 
-    color: #F4F3F3;
-}
-
-.place-information .confirmed {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.place-information .deaths {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.place-information .cured {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    color: #323232;
 }
 
 
 
+.place {
+}
 
+.confirmeds {
 
+}
 
+.deaths {
 
-.footer {
-    background-color: var(--color-green-main);
+}
 
-    height: 7rem;
+.cureds {
+
 }

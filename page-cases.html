@@ -26,7 +26,7 @@
             <h1 title="logo">Coronac</h1>
         </header>
 
-        <div class="menu-container"> <!-- Colocar no header -->
+        <!-- <div class="menu-container">  Colocar no header 
 
             <div id="menu-bar">
                     
@@ -45,7 +45,7 @@
             </div>
 
             <div class="menu-bg" id="menu-bg"></div>
-    </div>
+    </div> -->
 
     <section class="section">
         <h2 class="covid">Covid-19<h2>
@@ -57,36 +57,33 @@
             Você pode ser infectado ao inalar o vírus se estiver próximo de alguém que tenha COVID-19 ou ao tocar em uma superfície contaminada e, em seguida, passar as mãos nos olhos, no nariz ou na boca.</p>
    
    
-        <div class="search">
+        <form class="search">
             <input type="submit" value="&nbsp">
             <input type="text" id="input-place" placeholder="Lugar desejado">
             <input type="button" value="&nbsp" onclick="clean()">
-        </div>
+        </form>
    
-   
+        
         <div class="place-information">
-            <div class="flag">
-                <small class="board"> Local </small>
 
-                <img src="data:image/png;base64,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" alt="">
-                
-                <p>Brasil</p>
+            <div class="place">
+                <small class="board">Lugar</small>
             </div>
-            <div class="confirmed">
-                <small class="board"> confirmed </small>
-                <p>6.728.452</p>
+        
+            <div class="confirmeds">
+                <small class="board">Confirmados</small>
+
             </div>
+            
             <div class="deaths">
-                <small class="board">  Mortes </small>
+                <small class="board">Mortes</small>
 
-                <p>178.995</p>
-            </div>
-            <div class="cured">
-                <small class="board"> Curados </small>
-
-                <p>5.966.118</p>
             </div>
 
+            <div class="cureds">
+                <small class="board">Curados</small>
+
+            </div>
         </div>
 
      </section>

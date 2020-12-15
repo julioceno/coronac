@@ -125,3 +125,10 @@
 } 
 
 
+
+
+.footer {
+    background-color: var(--color-green-main);
+
+    height: 7rem;
+}
