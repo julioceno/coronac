@@ -7,8 +7,7 @@
 html,
 body,
 #container {
-    min-height: 100%;
-    height: auto;
+    height: 100%;
 
 }
 

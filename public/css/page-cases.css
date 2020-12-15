@@ -1,64 +1,60 @@
 #page-cases {
     background: rgba(255, 255, 255, 0.7);
-}
 
-#gradient {
-    clip-path: polygon(0 0, 100% 0, 100% 17%, 0 60%);
-    background-color: var(--color-green-main);    
-    height: 50rem;
 }
 
 #container {
     display: flex;
     flex-direction: column;
+}
 
-    position: absolute;
-    top: 1px;
+.gradient {
+        clip-path: polygon(0 0, 100% 0, 100% 30%, 0 100%);
+        background-color: var(--color-green-main);    
+        height: 50rem;
 
 }
 
 .section { 
     flex: 1;
     padding: 0 2rem;
+
+    
 } 
 
-
 .covid {
-    margin: 5rem 0 0;
+    position: absolute;
+    top: 17rem;
 
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
+
+    font-family: Inter;
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 3rem;
+    color: #000000;
 }
 
 .about {
+
+    position: absolute;
+    top: 26rem;
+
+
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 2.2rem;
+    color: #000000;
     
-    margin: 3rem 0 0;
-
-    width: 40rem;
-    
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    word-wrap: break-word;
-
-    width: 35rem;
-
+    width: 50rem;
 }
 
-.search{
-    margin: 6rem 0 0;
-    
-    width: 35rem;
-    height: 3.5rem;
+.search {
+    margin-top: 19rem;
 
-    border: .2rem solid #7A7A7A;
-    border-radius: .5rem;
+    width: 45rem;
+    height: 4rem;
+    border: 3px solid #7A7A7A;
+    border-radius: .50rem;
 
-    position: relative;
-    left: calc(50% - 17.5rem);
 
     overflow: hidden;
 }
@@ -68,137 +64,39 @@
 .search input[type="button"] {
     height: 100%;
     outline: none;
+
+    text-decoration: none;
     border: none;
 
+    background: rgba(255, 255, 255, 0.7);
 }
 
 .search input[type="submit"] {
     width: 5rem;
+    border-right: 3px solid #7A7A7A;
 
-    border-right: .2rem solid #7A7A7A;
-    background: rgba(255, 255, 255, 0.7);
 
     background-image: url(../images/search.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 39%;
+    background-size: 45%;
 
-    font-size: 1.3rem;
-    font-family: 'Inter', sans-serif;
-
+    transition: background .1s;
 }
 
 .search input[type="submit"]:hover {
-    background: #7a7a7a88;
-    
+    background:#7a7a7a2f;
+
     background-image: url(../images/search.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 39%;
+    background-size: 45%;    
 }
 
 .search input[type="text"] {
-    width: 25rem;
-    margin: 0 0 0 .5rem;
-
-    font-weight: bold;
-}
-
-.search input[type="button"] {
-    width: 3rem;
-
-    background: rgba(255, 255, 255, 0.7);
-
-    background-image: url(../images/delete.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 60%;
-}
-
-
-.place-information {
-    margin: 4rem 0 5rem;
-    background-color: #99F3BD;
-    width: 38rem;
-    height: 10rem;
-
-    border-radius: .50rem;
-
-    display: flex;
-
-
-    position: relative;
-    left: calc(50% - 21.5rem);
-}
-
-.place-information div {
-    width: 9.5rem;
-    height: 100%;
-
-    display: flex;
-    justify-content: center;
-}
-
-.place-information div {
-
+    margin-left: .5rem;
     font-size: 2rem;
-}
-
-
-.place-information div:nth-child(1) {
-    width: 12rem;
-}
-
-.place-information div + div {
-    border-left: 2px solid rgba(132, 128, 128, 0.35);
-
-}
-
-.board {
-
-    width: 8rem;
-    height: 2.5rem;
-    background: #E8E8E8;
-    border-radius: .2rem;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    
-    font-family: Righteous;
-    font-size: 1rem;
-    
-    color: #323232;
-
-    position: absolute;
-    bottom: 9rem;
-    
-}
-
-.place {
-}
-
-.place img {
-    margin: 2rem 0 0;
-    height: 5rem;
-    
-}
-
-.place p {
-    margin: 2rem 0 0;
-    align-self: flex-end;
-
-}
-
-.confirmeds {
-
-}
-
-.deaths {
-
-}
-
-.cureds {
-
+    font-weight: bold;
+    font-family: Inter;
+    letter-spacing: .1rem;
 }
