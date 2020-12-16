@@ -12,33 +12,32 @@
         clip-path: polygon(0 0, 100% 0, 100% 30%, 0 100%);
         background-color: var(--color-green-main);    
         height: 33rem;
-
 }
-
+    
 .section { 
-    padding: 0 2rem;
-    margin: auto;
-    margin-top: -180px;
     z-index: 1;
+    padding: 0 2rem;
+    margin: -180px 0 0 0;
 } 
 
 .covid {
     font-family: Inter;
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 9vw;
+    font-size: 4rem;
+    font-size: clamp(2.3rem, 8vw, 3rem);
     color: #000000;
-    margin-bottom: 20px;
 }
 
 .about {
     font-family: Inter;
     font-weight: 500;
-    font-size: 2.2rem;
+    font-size: 5vw;
     color: #000000;
     
-    width: 50rem;
+    width: 70%;
 }
-
+/* 
 .search {
     margin-top: 19rem;
 
@@ -100,14 +99,22 @@
     width: 4rem;
     
     background-image: url(../images/delete.svg);
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
     background-position: center;
     background-size: 70%; 
 }
-
 
 .place-information {
 
     background-color: royalblue;
     height: 30rem;
+}  */
+
+
+
+
+@media (min-width: 750px) {
+    #container {
+        background-color: red;
+    }
 }
