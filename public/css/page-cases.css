@@ -9,113 +9,102 @@
 
 }
 
-.gradient {
-        clip-path: polygon(0 0, 100% 0, 100% 30%, 0 100%);
-        background-color: var(--color-green-main);    
-        height: 33rem;
-}
+#container::before{
+    background: var(--color-green-main);
+    content: "";
+    display: block;
+    height: 30rem;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: skewY(-14deg);
+    transform-origin: left bottom;
+    width: 100%;
+    z-index: -1;
+  }
     
 .section { 
-    z-index: 1;
-    padding: 0 2rem;
-    margin: -230px 0 0 0;
+    padding: 4rem 2rem 0;
 } 
 
 .covid {
+
     font-family: Inter;
     font-weight: bold;
-    font-size: clamp(2.3rem, 8vw, 3rem);
+    font-size: 2.5rem;
     color: #000000;
+
     margin-bottom: 2rem;
 }
 
 .about {
+    width: 90%;
+
     font-family: Inter;
-    font-weight: 500;
-    font-size: 1.7rem;
-    font-size: clamp(1.5rem, 3vw, 1.7rem);
-    color: #000000;
-    
-    width: clamp(25rem, 50vw,  40rem);
+    font-weight: 400;
+    font-size: 1.8rem;
 }
-/* 
+
 .search {
-    margin-top: 19rem;
+    margin: 8rem 0 0;
 
-    width: 45rem;
+    width: 80%;
     height: 4rem;
-    border: 3px solid #7A7A7A;
-    border-radius: .50rem;
+    
+    border: 2px solid #7A7A7A;
+    border-radius: .40rem;
 
-    display: flex;
+    position: relative;
+    left: calc(50% - 40%);
 
     overflow: hidden;
 }
-
+  
 .search input[type="submit"],
 .search input[type="text"],
 .search input[type="button"] {
     height: 100%;
+    border: none;
+    text-decoration: none;
     outline: none;
 
-    text-decoration: none;
-    border: none;
 
-    background: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 .search input[type="submit"] {
-    width: 5rem;
-    border-right: 3px solid #7A7A7A;
-
+    width: 4rem;
+    border-right:  2px solid #7A7A7A;
 
     background-image: url(../images/search.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 45%;
+    background-size: 50%;
 
-    transition: background .1s;
 }
 
 .search input[type="submit"]:hover {
-    background:#7a7a7a2f;
+    background-color: #7a7a7a50;
 
     background-image: url(../images/search.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 45%;    
+    background-size: 50%;
 }
 
 .search input[type="text"] {
-    width: 34.5rem;
-    margin-left: .5rem;
-    font-size: 2rem;
-    font-weight: bold;
-    font-family: Inter;
-    letter-spacing: .1rem;
+    width: 25rem;
+
+    font-size: 1.8rem;
 }
+
 
 .search input[type="button"] {
-    
-    width: 4rem;
+    width: 4.5rem;
     
     background-image: url(../images/delete.svg);
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-position: center;
-    background-size: 70%; 
-}
+    background-size: 60%;
 
-.place-information {
-
-    background-color: royalblue;
-    height: 30rem;
-}  */
-
-
-
-
-@media (min-width: 750px) {
-    #container {
-        background-color: red;
-    }
 }

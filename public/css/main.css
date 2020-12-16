@@ -11,7 +11,8 @@ body,
 }
 
 :root {
-    --color-green-main: #28DF99 ;
+    --dark-color: #000000;
+    --color-green-main: #28DF99;
     --color-green-black: #75DAAD;
 
 
