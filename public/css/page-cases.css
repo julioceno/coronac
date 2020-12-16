@@ -55,6 +55,7 @@
     border: 3px solid #7A7A7A;
     border-radius: .50rem;
 
+    display: flex;
 
     overflow: hidden;
 }
@@ -94,9 +95,27 @@
 }
 
 .search input[type="text"] {
+    width: 34.5rem;
     margin-left: .5rem;
     font-size: 2rem;
     font-weight: bold;
     font-family: Inter;
     letter-spacing: .1rem;
+}
+
+.search input[type="button"] {
+    
+    width: 4rem;
+    
+    background-image: url(../images/delete.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%; 
+}
+
+
+.place-information {
+
+    background-color: royalblue;
+    height: 30rem;
 }
