@@ -4,13 +4,6 @@
     box-sizing: border-box;
 }
 
-html,
-body,
-#container {
-    height: 100%;
-
-}
-
 :root {
     --color-green-main: #28DF99 ;
     --color-green-black: #75DAAD;
