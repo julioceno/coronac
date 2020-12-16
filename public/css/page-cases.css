@@ -11,34 +11,26 @@
 .gradient {
         clip-path: polygon(0 0, 100% 0, 100% 30%, 0 100%);
         background-color: var(--color-green-main);    
-        height: 50rem;
+        height: 33rem;
 
 }
 
 .section { 
-    flex: 1;
     padding: 0 2rem;
-
-    
+    margin: auto;
+    margin-top: -180px;
+    z-index: 1;
 } 
 
 .covid {
-    position: absolute;
-    top: 17rem;
-
-
     font-family: Inter;
     font-weight: bold;
     font-size: 3rem;
     color: #000000;
+    margin-bottom: 20px;
 }
 
 .about {
-
-    position: absolute;
-    top: 26rem;
-
-
     font-family: Inter;
     font-weight: 500;
     font-size: 2.2rem;
