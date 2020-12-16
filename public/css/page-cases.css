@@ -54,6 +54,8 @@
     border: 2px solid #7A7A7A;
     border-radius: .40rem;
 
+    display: flex;
+
     position: relative;
     left: calc(50% - 40%);
 
@@ -95,6 +97,8 @@
 .search input[type="text"] {
     width: 25rem;
 
+    margin: 0 0 0 .8rem;
+
     font-size: 1.8rem;
 }
 
@@ -106,5 +110,4 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 60%;
-
 }
