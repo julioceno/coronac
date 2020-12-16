@@ -6,6 +6,7 @@
 #container {
     display: flex;
     flex-direction: column;
+
 }
 
 .gradient {
@@ -17,25 +18,26 @@
 .section { 
     z-index: 1;
     padding: 0 2rem;
-    margin: -180px 0 0 0;
+    margin: -230px 0 0 0;
 } 
 
 .covid {
     font-family: Inter;
     font-weight: bold;
-    font-size: 9vw;
-    font-size: 4rem;
     font-size: clamp(2.3rem, 8vw, 3rem);
     color: #000000;
+    margin-bottom: 2rem;
 }
 
 .about {
     font-family: Inter;
     font-weight: 500;
-    font-size: 5vw;
+    font-size: 1.7rem;
+    font-size: clamp(1.5rem, 3vw, 1.7rem);
     color: #000000;
     
-    width: 70%;
+    width:;
+    width: clamp(20rem, 50vw,  40rem);
 }
 /* 
 .search {
