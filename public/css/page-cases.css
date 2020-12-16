@@ -48,6 +48,13 @@
     font-size: 1.8rem;
 }
 
+
+.centering {
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+}
+  
 .search {
     margin: 8rem 0 0;
 
@@ -59,12 +66,10 @@
 
     display: flex;
 
-    position: relative;
-    left: calc(50% - 40%);
-
     overflow: hidden;
 }
-  
+
+
 .search input[type="submit"],
 .search input[type="text"],
 .search input[type="button"] {
@@ -119,13 +124,45 @@
 .place-information {
     margin: 3rem 0 0 ;
 
-    width: 90%;
-    height: 7rem;
+    width: 43rem;
+    max-width: 90rem;
+    height: 8rem;
 
-    
-    position: relative;
-    left: calc(50% - 40%);
-
+    display: flex;
+   
     background: #99F3BD;
-    border-radius: 5px;
+    border-radius: .5rem;
 }
+
+.place-information div {
+    width: 10rem;
+
+    display: flex;
+    justify-content: center;
+}
+
+.place-information div + div{
+    border-left: 2px solid rgba(132, 128, 128, 0.35);
+}
+
+.place-information .board {
+    margin-top: -2rem;
+}
+
+
+.place-information .place{
+    width: 13rem;
+}
+
+.place-information .confirmeds{
+
+}
+
+.place-information .deaths{
+
+}
+
+.place-information .cureds{
+
+}
+
