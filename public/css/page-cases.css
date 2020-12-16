@@ -21,10 +21,13 @@
     transform-origin: left bottom;
     width: 100%;
     z-index: -1;
+
+    
   }
     
 .section { 
     padding: 4rem 2rem 0;
+    flex: 1;
 } 
 
 .covid {
@@ -110,4 +113,19 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 60%;
+}
+
+
+.place-information {
+    margin: 3rem 0 0 ;
+
+    width: 90%;
+    height: 7rem;
+
+    
+    position: relative;
+    left: calc(50% - 40%);
+
+    background: #99F3BD;
+    border-radius: 5px;
 }
