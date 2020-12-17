@@ -13,5 +13,47 @@
 
 
 .footer {
-    background-color: red;
+    width: 100%;
+    height: 8rem;
+    background: #28DF99;
+
+    padding: 1rem .8rem 0  2rem ;
+}
+
+.header-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-footer {
+
+    font-family: Righteous;
+    font-weight: normal;
+    font-size: 2rem;
+
+    color: #FFFFFF;
+}
+
+.footer p {
+
+    width: 40rem;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.5rem;
+
+    color: #F4F3F3;
+}
+
+.footer .contacts {
+    height: 3rem;
+    width: 100%;
+
+}
+
+.footer .contacts img {
+    padding: 0 .2rem;
+
+    width: 1.8rem;
+
 }
