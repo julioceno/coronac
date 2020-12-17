@@ -212,8 +212,8 @@
         background-image: url(../images/world.svg);
         background-repeat: no-repeat;
         background-size: 40rem;
-        background-size: clamp(20rem, 35%, 35rem);
-        background-position: min(90%, 50rem)  40%;
+        background-size: clamp(20rem, 35%, 43rem);
+        background-position: 90%  60%;
     }
 
     #container::before{
@@ -241,4 +241,91 @@
         font-size: clamp(1.6rem, 2vw, 2rem);
     }
 
+    .centering {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search {
+        margin: 6rem 0 0;
+    
+        width: 45rem;
+        width: clamp(35rem, 35vw, 43rem);
+        height: clamp(3rem, 4vw, 4rem);
+        
+        border: 2px solid #7A7A7A;
+        border-radius: .40rem;
+    
+        display: flex;
+    
+        overflow: hidden;
+    }
+    
+
+    
+    .place-information {
+        margin: 6rem 0 8rem 5rem ;
+    
+        width: clamp(45rem, 45vw, 53rem);
+        width: 54rem;
+        height: clamp(7rem, 7vw, 8.5rem);
+        height: 10rem;
+    
+        display: flex;
+       
+        background: #99F3BD;
+        border-radius: .5rem;
+    }
+    
+    
+    .place-information .board {
+        font-size: 90%;
+    }
+
+
+    
+    .place-information p {
+
+        font-size: 130%;
+        position: relative;
+        top: calc(50% - 2.2rem);
+    }
+
+
+
+    .place-information .place img  {
+        height: 50%;
+        margin: .5rem 0 0;
+    }
+
+    .place-information .place p {
+        position: static;
+
+
+        margin: 0 0 .5rem;
+
+    }
+
+}
+
+@media (min-width: 950px) {
+    
+    #container {
+        background-position: 90%  85%;
+    }
+
+    #container::before{
+        background: var(--color-green-main);
+        content: "";
+        display: block;
+        height: 40rem;
+        transform: skewY(-12.5deg);
+        width: 100%;
+        z-index: -1;
+    }
+    
+
+    
+    
 }

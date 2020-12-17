@@ -3,12 +3,20 @@
     width: 100%;
     height: 9rem;
     padding: 1rem 3rem 0;
+
+    display: flex;
+    justify-content: space-between;
+
 }
 
 .logo  {
     font-family: Righteous;
     font-size: 2rem;
     font-size: clamp(2.5rem, 9vw, 4rem);
+}
+
+.nav-bar {
+    display: none;
 }
 
 
@@ -56,4 +64,83 @@
     margin-top: clamp(-1rem, -2vh, -1.5rem);
     width: clamp(1.5rem, 4vw, 2.4rem);
 
+}
+
+
+
+
+@media(min-width: 760px) {
+    .nav-bar {
+        display: flex;
+        align-items: center;
+        margin-top: -1.5rem;
+    }
+    
+    .nav-bar a {
+        font-family: Inter;
+        font-size: 2rem;
+        font-size: clamp(1.5rem, 1.5vw, 1.7rem);
+        text-decoration: none;
+
+        color: #ffffffd5;
+        margin-left: 2rem;
+
+        transition: ease .2s;
+    }
+
+    .nav-bar a:hover {
+        color: #2ec1abbe;
+    }
+
+
+      
+    .nav-bar a:nth-child(5) {
+        width: 13rem;
+        height: 4.5rem;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffffd5;
+
+        background: #2ec1abf1;
+        border-radius: 5rem;
+
+        transition: ease .2s;
+
+    }
+
+    .nav-bar a:nth-child(5):hover {
+        background: #2ec1abbe;
+    }
+
+    .nav-bar img {
+        height: 4rem;
+        height: clamp(4rem, 5.5vw, 5rem);
+        margin-left: 1.5rem;
+    }
+
+    .header-footer {
+        align-items: flex-start;
+    }
+    
+    
+    .logo-footer {
+        font-size: clamp( 2.5rem ,3vw, 3.3rem);
+    }
+
+
+    .footer p {
+        margin-right: 3rem;
+        width: clamp(21rem, 70vw, 50rem);
+        font-size: clamp(.8rem, 3vw,  2.2rem);
+    }
+
+    .footer .contacts img {
+        padding: 0 .2rem;
+
+        margin-top: clamp(-1.2rem, -2.2vh, -2.9rem);
+        width: clamp(2.5rem, 3vw, 2rem);
+
+    }
 }
