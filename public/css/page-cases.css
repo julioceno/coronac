@@ -127,7 +127,7 @@
 
     width: 90%;
     max-width: 90rem;
-    height: 6.5rem;
+    height: 13vw;
 
     display: flex;
    
@@ -162,25 +162,21 @@
     align-items: center;
 
     font-family: Righteous;
-    font-size: 70%;
+    font-size: 2vw;
     color: #323232;
 }
 
 
 .place-information p {
-
     font-family: Righteous;
     font-style: normal;
     font-weight: normal;
-    font-size: 90%;
+    font-size: 2.5vw;
 
-
-    height: 2rem;
-    
     color: #F4F3F3;
 
     position: relative;
-    top: calc(50% - 1.5rem);
+    top: calc(50% - 3vw);
 }
 
 
@@ -195,7 +191,7 @@
 }
 
 .place-information .place img  {
-    height: 2.5rem;
+    height: 6vw;
     margin: .5rem 0 0;
 }
 
@@ -211,9 +207,8 @@
     #container {
         background-image: url(../images/world.svg);
         background-repeat: no-repeat;
-        background-size: 40rem;
-        background-size: clamp(20rem, 35%, 43rem);
-        background-position: 90%  60%;
+        background-size: clamp(20rem, 35%, 46rem);
+        background-position: 90%  50%;
     }
 
     #container::before{
@@ -319,7 +314,7 @@
         background: var(--color-green-main);
         content: "";
         display: block;
-        height: 40rem;
+        height: 48rem;
         transform: skewY(-12.5deg);
         width: 100%;
         z-index: -1;
