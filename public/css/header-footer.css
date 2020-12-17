@@ -131,7 +131,7 @@
 
 
     .footer p {
-        margin-right: 3rem;
+        margin: 1rem 3rem 0 0;
         width: clamp(21rem, 70vw, 50rem);
         font-size: clamp(.8rem, 3vw,  2.2rem);
     }

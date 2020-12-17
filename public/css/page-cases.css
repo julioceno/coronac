@@ -42,7 +42,7 @@
 }
 
 .about {
-    width: 90%;
+    width: 80%;
 
     font-family: Inter;
     font-weight: 600;
@@ -59,7 +59,7 @@
 .search {
     margin: 8rem 0 0;
 
-    width: 80%;
+    width: clamp( 30rem, 80%, 50rem);
     height: 4rem;
     
     border: 2px solid #7A7A7A;
@@ -125,7 +125,7 @@
 .place-information {
     margin: 5rem 0 3rem ;
 
-    width: 90%;
+    width: 90vw;
     max-width: 90rem;
     height: 13vw;
 
@@ -207,15 +207,16 @@
     #container {
         background-image: url(../images/world.svg);
         background-repeat: no-repeat;
-        background-size: clamp(20rem, 35%, 46rem);
-        background-position: 90%  50%;
+        background-size: clamp(20rem, 35%, 37rem);
+        background-position: 90%  70%;
+
     }
 
     #container::before{
         background: var(--color-green-main);
         content: "";
         display: block;
-        height: 33rem;
+        height: 36rem;
         transform: skewY(-14deg);
         width: 100%;
         z-index: -1;
@@ -307,6 +308,30 @@
 @media (min-width: 950px) {
     
     #container {
+        background-position: 90%  70%;
+
+    }
+
+    #container::before{
+        background: var(--color-green-main);
+        content: "";
+        display: block;
+        height: 35rem;
+        transform: skewY(-12.5deg);
+        width: 100%;
+        z-index: -1;
+    }
+    
+
+    
+    
+}
+
+
+
+@media (min-width: 1050px) {
+    
+    #container {
         background-position: 90%  85%;
     }
 
@@ -314,7 +339,7 @@
         background: var(--color-green-main);
         content: "";
         display: block;
-        height: 48rem;
+        height: 40rem;
         transform: skewY(-12.5deg);
         width: 100%;
         z-index: -1;
