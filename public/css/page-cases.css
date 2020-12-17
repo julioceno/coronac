@@ -103,7 +103,7 @@
 }
 
 .search input[type="text"] {
-    width: 25rem;
+    width: 80%;
 
     margin: 0 0 0 .8rem;
 
@@ -122,11 +122,11 @@
 
 
 .place-information {
-    margin: 3rem 0 0 ;
+    margin: 5rem 0 0 ;
 
-    width: 43rem;
+    width: 33rem;
     max-width: 90rem;
-    height: 8rem;
+    height: 6.5rem;
 
     display: flex;
    
@@ -147,6 +147,30 @@
 
 .place-information .board {
     margin-top: -2rem;
+
+    width: 7rem;
+    height: 20px;
+    left: 273px;
+    top: 468px;
+
+    background: #E8E8E8;
+    border-radius: 2px;
+
+
+    width: 49px;
+    height: 20px;
+    left: 275px;
+    top: 473px;
+
+    font-family: Righteous;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 10px;
+    text-align: center;
+
+    color: #323232;
+
 }
 
 
