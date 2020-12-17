@@ -146,31 +146,21 @@
 }
 
 .place-information .board {
-    margin-top: -2rem;
+    margin-top: -1rem;
 
-    width: 7rem;
-    height: 20px;
-    left: 273px;
-    top: 468px;
+    width: 6.5rem;
+    height: 2rem;
 
     background: #E8E8E8;
-    border-radius: 2px;
+    border-radius: .2rem;
 
-
-    width: 49px;
-    height: 20px;
-    left: 275px;
-    top: 473px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     font-family: Righteous;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 8px;
-    line-height: 10px;
-    text-align: center;
-
+    font-size: .9rem;
     color: #323232;
-
 }
 
 
