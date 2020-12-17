@@ -122,7 +122,7 @@
 
 
 .place-information {
-    margin: 5rem 0 0 ;
+    margin: 5rem 0 3rem ;
 
     width: 33rem;
     max-width: 90rem;
@@ -138,7 +138,8 @@
     width: 10rem;
 
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .place-information div + div{
@@ -164,8 +165,37 @@
 }
 
 
+.place-information p {
+
+    font-family: Righteous;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.4rem;
+
+    height: 2rem;
+    
+    color: #F4F3F3;
+
+    position: relative;
+    top: calc(50% - 1.5rem);
+}
+
+
 .place-information .place{
     width: 13rem;
+
+}
+
+.place-information .place img  {
+    height: 2.5rem;
+    margin: .5rem 0 0;
+}
+
+.place-information .place p {
+    position: static;
+
+    margin: .5rem 0 0;
+
 }
 
 .place-information .confirmeds{
@@ -180,3 +210,10 @@
 
 }
 
+
+
+@media(min-width: 720px) {
+    #container {
+        background-color: red;
+    }
+}

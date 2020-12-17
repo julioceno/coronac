@@ -10,3 +10,8 @@
     font-size: 2rem;
     font-size: clamp(2.5rem, 9vw, 4rem);
 }
+
+
+.footer {
+    background-color: red;
+}
