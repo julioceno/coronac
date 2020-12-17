@@ -34,7 +34,8 @@
 
     font-family: Inter;
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 4rem;
+    font-size: clamp(2.5rem, 4.2vw, 4rem);
     color: #000000;
 
     margin-bottom: 2rem;
@@ -45,14 +46,14 @@
 
     font-family: Inter;
     font-weight: 600;
-    font-size: 1.8rem;
+    font-size: clamp(1.8rem, 3.5vw, 2.3rem);
 }
 
 
 .centering {
     display: flex;
     flex-direction: column;
-   align-items: center;
+    align-items: center;
 }
   
 .search {
@@ -124,7 +125,7 @@
 .place-information {
     margin: 5rem 0 3rem ;
 
-    width: 33rem;
+    width: 90%;
     max-width: 90rem;
     height: 6.5rem;
 
@@ -135,7 +136,7 @@
 }
 
 .place-information div {
-    width: 10rem;
+    width: 30%;
 
     display: flex;
     flex-direction: column;
@@ -150,7 +151,8 @@
     margin-top: -1rem;
 
     width: 6.5rem;
-    height: 2rem;
+    width: 80%;
+    height: 30%;
 
     background: #E8E8E8;
     border-radius: .2rem;
@@ -160,7 +162,7 @@
     align-items: center;
 
     font-family: Righteous;
-    font-size: .9rem;
+    font-size: 70%;
     color: #323232;
 }
 
@@ -170,7 +172,8 @@
     font-family: Righteous;
     font-style: normal;
     font-weight: normal;
-    font-size: 1.4rem;
+    font-size: 90%;
+
 
     height: 2rem;
     
@@ -182,7 +185,12 @@
 
 
 .place-information .place{
-    width: 13rem;
+    width: 35%;
+
+}
+
+.place-information .place .board {
+    width: 60%;
 
 }
 
@@ -198,8 +206,39 @@
 
 }
 
-@media(min-width: 720px) {
+@media(min-width: 760px) {
+ 
     #container {
-        background-color: red;
+        background-image: url(../images/world.svg);
+        background-repeat: no-repeat;
+        background-size: 40rem;
+        background-size: clamp(20rem, 35%, 35rem);
+        background-position: min(90%, 50rem)  40%;
     }
+
+    #container::before{
+        background: var(--color-green-main);
+        content: "";
+        display: block;
+        height: 33rem;
+        transform: skewY(-14deg);
+        width: 100%;
+        z-index: -1;
+    }
+    
+    .section { 
+        padding: 8rem 4rem 0;
+    } 
+
+    .covid {
+        font-size: clamp(2.5rem, 3vw, 3.5rem);
+        margin-bottom: 3rem;
+    }
+
+    .about {
+        width: clamp(40rem, 60%, 50rem);
+        font-size: 2vw;
+        font-size: clamp(1.6rem, 2vw, 2rem);
+    }
+
 }
