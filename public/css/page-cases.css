@@ -44,7 +44,7 @@
     width: 90%;
 
     font-family: Inter;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 1.8rem;
 }
 
@@ -197,20 +197,6 @@
     margin: .5rem 0 0;
 
 }
-
-.place-information .confirmeds{
-
-}
-
-.place-information .deaths{
-
-}
-
-.place-information .cureds{
-
-}
-
-
 
 @media(min-width: 720px) {
     #container {
