@@ -87,7 +87,7 @@
 
 .nav ul li:nth-child(6)  {
 
-    margin-left: 2rem;
+    margin-left: 9rem;
 
     height: 5.5rem;
     width: 25rem;
@@ -198,7 +198,7 @@
     
     .nav-bar a {
         font-family: Inter;
-        font-size: clamp(1rem, 1.5vw, 1.7rem);
+        font-size: clamp(1rem, 1.4vw, 1.7rem);
         text-decoration: none;
         margin-left: clamp(1rem, 1.5vw, 2.5rem);
         text-align: center;
@@ -212,19 +212,21 @@
         color: #2ec1abbe;
     }
 
+    .nav-bar img {
+        height: 4rem;
+        height: clamp(4rem, 5.5vw, 5rem);
+        margin-left: 1.5rem;
+    }
 
-      
     .nav-bar a:nth-child(7) {
-        width: 13rem;
-        width: 10rem;
-        width: clamp(10rem, 10vw  ,13rem);
+        width: clamp(13rem, 10vw  ,13rem);
         height: clamp(3.5rem, 4vw, 4.5rem );
         
         display: flex;
         justify-content: center;
         align-items: center;
         color: #ffffffd5;
-        font-size: clamp(1.3rem, 1.5vw, 1.7rem);
+        font-size: clamp(1.2rem, 1.3vw, 1.5rem);
 
 
         background: #2ec1abf1;
@@ -238,11 +240,7 @@
         background: #2ec1abbe;
     }
 
-    .nav-bar img {
-        height: 4rem;
-        height: clamp(4rem, 5.5vw, 5rem);
-        margin-left: 1.5rem;
-    }
+    /* footer */
 
     .header-footer {
         align-items: flex-start;
@@ -267,5 +265,15 @@
         margin: clamp(-1.2rem, -2.2vh, -2.9rem) .2rem 0;
         width: clamp(2.5rem, 3vw, 2rem);
 
+    }
+}
+
+
+@media(min-width:1000px) {
+    .nav-bar a {
+        margin-left: .9rem;
+        margin-left: clamp(.9rem, 1.3vw, 2.5rem);
+   
+        font-size: clamp(1.3rem, 1.3vw, 1.5rem);
     }
 }

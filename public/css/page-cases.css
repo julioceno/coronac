@@ -211,7 +211,9 @@
         background-repeat: no-repeat;
         background-size: clamp(20rem, 35%, 37rem);
         background-position: 90%  70%;
-
+        background-position: 90%  20rem;
+        background-position: 90%  clamp(18rem, 70%, 70%);
+        
     }
 
     #container::before{
