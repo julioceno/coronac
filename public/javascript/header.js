@@ -1,5 +1,5 @@
 const checkbox = document.getElementById('menu-hamburguer')
-const appearMenu = document.getElementById('appear-menu')
+const appearMenu = document.getElementById('menu-bar')
 
 function menuHamburguer() {
     if (checkbox.checked) {
@@ -19,4 +19,21 @@ function menuHamburguer() {
     
         appearMenu.style.display="none"
     }
+
 }
+
+function resizeWindow() {
+    let windowWidth = window.innerWidth
+
+    if (windowWidth > 720) {
+
+        document.getElementById('menu').click()
+        document.getElementById('section').style.display = "block"
+    
+        appearMenu.style.display="none"
+    }
+}
+
+window.addEventListener('resize', () => {
+    resizeWindow()
+})

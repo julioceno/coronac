@@ -19,6 +19,7 @@
 .menu-hamburguer {
     height: 3rem;
     width: 6rem;
+    margin-top: 1.5rem;
 }
 
 .bar {
@@ -59,9 +60,9 @@
     opacity: 0;
 } 
 
-.appear-menu {
+.menu-bar {
     width: 100%;
-    height: 87.5vh;
+    height: 89.5vh;
     margin-top: 8rem;
     background: var(--color-green-main);
     position: absolute;
@@ -84,7 +85,7 @@
 
 .nav ul li:nth-child(5)  {
 
-    margin-left: 1.5rem;
+    margin-left: 2rem;
 
     height: 5.5rem;
     width: 25rem;
@@ -93,7 +94,7 @@
     justify-content: center;
     align-items: center;
 
-    background: #25bda65e;
+    background: #25bda6;
     border-radius: 5rem;
 
     transition: ease .2s;
@@ -110,9 +111,10 @@
 
 
 
+
 .nav ul li:nth-child(5) a {
    
-        color: rgba(128, 58, 199, 0.781);
+        color: #ffffffc7
     
    
 }
