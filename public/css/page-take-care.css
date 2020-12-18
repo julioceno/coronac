@@ -1,0 +1,21 @@
+#page-take-care {
+    background: rgba(255, 255, 255, 0.7);
+
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.section { 
+    padding: 4rem 2rem 0;
+    flex: 1;
+} 
+
+
+
+@media(min-width: 760px) {
+ 
+}

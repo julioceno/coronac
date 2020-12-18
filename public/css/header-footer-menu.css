@@ -2,7 +2,9 @@
     color: #FFF;
     width: 100%;
     height: 9rem;
-    padding: 1rem 3rem 0;
+    padding: 1rem 3rem 0rem;
+
+    background: #28DF99;
 
     display: flex;
     justify-content: space-between;
@@ -83,7 +85,7 @@
 
 }
 
-.nav ul li:nth-child(5)  {
+.nav ul li:nth-child(6)  {
 
     margin-left: 2rem;
 
@@ -101,6 +103,10 @@
 
 }
 
+.nav ul li:nth-child(6):hover  {
+    background: #25bda6d0;
+}
+
 .nav ul li a{
     text-decoration: none;
     font-family: Righteous;
@@ -109,29 +115,18 @@
     font-size: 2.5rem;
 }
 
-
-
-
-.nav ul li:nth-child(5) a {
-   
-        color: #ffffffc7
-    
-   
-}
-
 .nav ul li a:hover{
     font-weight: bolder;
 }
 
+.nav ul li:nth-child(6) a{
+        color: #ffffffcb
+}
 
 
-
-
-
-
-
-
-
+.nav ul li:nth-child(6) a:hover{
+    font-weight: bold;
+}
 
 
 .nav-bar {
@@ -198,16 +193,17 @@
         display: flex;
         align-items: center;
         margin-top: .8rem;
+        margin-left: 2rem;
     }
     
     .nav-bar a {
         font-family: Inter;
-        font-size: 2rem;
-        font-size: clamp(1.5rem, 1.5vw, 1.7rem);
+        font-size: clamp(1rem, 1.5vw, 1.7rem);
         text-decoration: none;
+        margin-left: clamp(1rem, 1.5vw, 2.5rem);
+        text-align: center;
 
         color: #ffffffd5;
-        margin-left: 2rem;
 
         transition: ease .2s;
     }
@@ -218,14 +214,18 @@
 
 
       
-    .nav-bar a:nth-child(6) {
+    .nav-bar a:nth-child(7) {
         width: 13rem;
-        height: 4.5rem;
+        width: 10rem;
+        width: clamp(10rem, 10vw  ,13rem);
+        height: clamp(3.5rem, 4vw, 4.5rem );
         
         display: flex;
         justify-content: center;
         align-items: center;
         color: #ffffffd5;
+        font-size: clamp(1.3rem, 1.5vw, 1.7rem);
+
 
         background: #2ec1abf1;
         border-radius: 5rem;
@@ -234,7 +234,7 @@
 
     }
 
-    .nav-bar a:nth-child(6):hover {
+    .nav-bar a:nth-child(7):hover {
         background: #2ec1abbe;
     }
 
