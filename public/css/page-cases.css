@@ -300,8 +300,9 @@
     .place-information .place p {
         position: static;
 
+        font-size: 120%;
 
-        margin: 0 0 .5rem;
+        margin: 1rem 0 0rem;
 
     }
 

@@ -25,17 +25,40 @@
         <header class="header">
             <h1 class="logo">Coronac</h1>
 
+            <input type="checkbox" id="menu-hamburguer" style="display: none;" onclick="menuHamburguer()">
+            <label class="menu-hamburguer" for="menu-hamburguer" id="menu">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </label>
+
+
+
             <nav class="nav-bar">
+                <a href="">Teste de outras pessoas</a>
+                <a href="">Fazer teste </a>
                 <a href="">Como se cuidar</a>
-                <a href="">Contato</a>
-                <a href="">Sobre</a>
+                <a href="">Quem somos</a>
                 <img  src="./public/images/bar.svg" alt="">
                 <a target="_blank" href="https://github.com/julioceno/coronac">Repositório</a>
-
             </nav>
+
+         
         </header>
+
+        <aside class="appear-menu" id="appear-menu">
+                 <nav class="nav" id="nav">
+                    <ul>
+                        <li><a href="">Teste de outras pessoas</a></li>
+                        <li><a href="">Fazer teste</a></li>
+                        <li><a href="">Como se cuidar</a></li>
+                        <li><a href="">Quem somos</a></li>
+                        <li><a href="">Repositório</a></li>
+                    </ul>
+                </nav>
+        </aside>
         
-        <section class="section">
+        <section class="section" id="section">
         <h2 class="covid">Covid-19<h2>
 
         <p class="about">
@@ -102,5 +125,6 @@
 
 </div>
 </body>
+<script src="public/javascript/header.js"></script>
 <script src="public/javascript/page-cases.js"></script>
 </html>
