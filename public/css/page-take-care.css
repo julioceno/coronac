@@ -9,12 +9,56 @@
 
 }
 
+.header {
+    margin-bottom: 5rem;
+}
+
 .section { 
-    padding: 4rem 2rem 0;
+    padding: 0rem 3rem 4rem;
     flex: 1;
+
 } 
 
 
+.tip-container  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+    margin-top: 2rem;
+    height: calc(100vh + 95rem);
+}
+
+.tip {
+    display: flex;
+    align-items: center;
+
+    width: clamp(44rem, 65vw, 50rem);
+}
+
+.margin-right {
+    margin-right: 3rem;
+}
+
+.margin-left {
+    margin-left: 3rem;
+}
+
+
+.tip p {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.4rem;
+
+    color: #000000;
+}
+
+.tip small {
+    color: #28DF99;
+    font-size: 1.4rem;
+}
 
 @media(min-width: 760px) {
  
