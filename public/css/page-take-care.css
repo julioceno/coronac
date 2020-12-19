@@ -46,30 +46,53 @@
 
 
 .tip img {
-    height: 13rem;
+    height: clamp(13rem, 22vw, 25rem);
 }
 
 .tip p {
     font-family: Inter;
     font-style: normal;
     font-weight: 800;
-    font-size: 1.2rem;
+    font-size: clamp(1.2rem, 2.5vw, 3rem);
+    color: #000000;
+}
+
+.tip small {
+    color: #28DF99;
+    font-size: clamp(1.2rem, 2.5vw, 3rem);
+}
+
+#tip2 p,
+#tip2 p small{
+    font-size: 1.7rem;
+    font-size: clamp(1.1rem, 2.5vw,  1.7rem);
+}
+
+
+
+@media(min-width: 760px) {
+/*  
+.tip img {
+    height: clamp(13rem, 22vw, 25rem);
+}
+
+.tip p {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 800;
+    font-size: clamp(1.2rem, 2.5vw, 3rem);
+    width: clamp(18rem, 30vw, 25rem);
 
     color: #000000;
 }
 
 .tip small {
     color: #28DF99;
-    font-size: 1.4rem;
+    font-size: clamp(1.2rem, 2.5vw, 3rem);
 }
 
 #tip2 p,
-#tip2 p small,{
-        font-size: 1.3rem;
-}
-
-
-
-@media(min-width: 760px) {
- 
+#tip2 p small{
+    font-size: 1rem;
+} */
 }
