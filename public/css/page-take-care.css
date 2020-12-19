@@ -27,14 +27,13 @@
     justify-content: space-between;
     
     margin-top: 2rem;
-    height: calc(100vh + 95rem);
+    height: calc(100vh + 60rem);
+
 }
 
 .tip {
     display: flex;
     align-items: center;
-
-    width: clamp(44rem, 65vw, 50rem);
 }
 
 .margin-right {
@@ -46,11 +45,15 @@
 }
 
 
+.tip img {
+    height: 13rem;
+}
+
 .tip p {
     font-family: Inter;
     font-style: normal;
     font-weight: 800;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 
     color: #000000;
 }
@@ -58,6 +61,11 @@
 .tip small {
     color: #28DF99;
     font-size: 1.4rem;
+}
+
+#tip2 p{
+    font-size: 1rem;
+    
 }
 
 @media(min-width: 760px) {
