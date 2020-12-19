@@ -27,7 +27,7 @@
     justify-content: space-between;
     
     margin-top: 2rem;
-    height: calc(100vh + 60rem);
+    height: calc(100vh + 80rem);
 
 }
 
@@ -63,10 +63,12 @@
     font-size: 1.4rem;
 }
 
-#tip2 p{
-    font-size: 1rem;
-    
+#tip2 p,
+#tip2 p small,{
+        font-size: 1.3rem;
 }
+
+
 
 @media(min-width: 760px) {
  
