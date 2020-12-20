@@ -209,8 +209,6 @@
         background-image: url(../images/world.svg);
         background-repeat: no-repeat;
         background-size: clamp(20rem, 35%, 37rem);
-        background-position: 90%  70%;
-        background-position: 90%  20rem;
         background-position: 90%  clamp(18rem, 70%, 70%);
         
     }
@@ -325,10 +323,6 @@
         width: 100%;
         z-index: -1;
     }
-    
-
-    
-    
 }
 
 
@@ -336,7 +330,7 @@
 @media (min-width: 1050px) {
     
     #container {
-        background-position: 90%  40%;
+        background-position: 90%  80%;
     }
 
     #container::before{
