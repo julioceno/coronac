@@ -1,19 +1,12 @@
 #page-take-care {
     background: rgba(255, 255, 255, 0.7);
-
 }
 
 #container {
     display: flex;
     flex-direction: column;
-
-
-
 }
 
-.header {
-    margin-bottom: 5rem;
-}
 
 .section { 
     padding: 0rem 3rem 4rem;

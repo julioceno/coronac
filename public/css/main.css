@@ -7,15 +7,14 @@
 html, 
 body,
 #container{
-    min-height: 100%;
-    height: auto;
+    height: 100%;
+
 }
 
 :root {
     --dark-color: #000000;
     --color-green-main: #28DF99;
     --color-green-black: #75DAAD;
-
 
     font-size: 62.5%;
 }
