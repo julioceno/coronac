@@ -337,7 +337,7 @@
 @media (min-width: 1050px) {
     
     #container {
-        background-position: 90%  85%;
+        background-position: 90%  40%;
     }
 
     #container::before{
