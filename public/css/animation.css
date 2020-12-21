@@ -22,13 +22,14 @@
 
 
 
+
 .animate-up {
     animation-name: up;
     animation-duration: 200ms;
     animation-fill-mode: backwards;
 }
 
-.animate-appear-menu {
+.animate-appear {
     animation-name: up;
     animation-duration: 200ms;
     animation-fill-mode: backwards;

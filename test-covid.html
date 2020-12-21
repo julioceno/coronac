@@ -43,7 +43,7 @@
             </nav>
         </header>
       
-        <aside class="menu-bar animate-appear-menu" id="menu-bar">
+        <aside class="menu-bar animate-up" id="menu-bar">
             <nav class="nav" id="nav">
                <ul>
                    <li><a href="page-cases.html">Casos</a></li>
@@ -58,7 +58,9 @@
    
         <section class="section" id="section">
 
-            <form action="" class="form">
+            <main>
+
+            <form action="" class="form animate-appear">
                 <fieldset class="data">
                     <legend>Dados</legend>
 
@@ -245,14 +247,32 @@
 
                 <fieldset class="permission">
                     <legend>Permissão</legend>
+                    
                     <div class="input-block">
+                        <label class="label-checkbox" for="">Esse formulário pode ir para o feed?</label>
+
+                        <div class="a">
+
+                        <div class="checkbox-container">
+                            <input type="radio" name="feed" id="feed1"  value="Masculino" >
+                            <label for="feed1">Sim</label>
+                            <input type="radio" name="feed" id="feed2" value="Feminino" checked>
+                            <label for="feed2">Não</label>
+                        </div>
+
+                        <p>Saiba quais informações suas ficarão expostas <a onclick="alerta()">*</a></p>
+                    
+                        </div>
+
                     </div>
+
 
                 </fieldset>
 
             </form> 
 
         </section>
+    </main>
 
 
     
@@ -275,5 +295,5 @@
 </div>
 </body>
 <script src="public/javascript/header.js"></script>
-<script src="public/javascript/page-cases.js"></script>
+<script src="public/javascript/page-test-covid.js"></script>
 </html>
