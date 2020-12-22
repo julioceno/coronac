@@ -1,0 +1,343 @@
+#page-test-covid {
+    background: rgba(255, 255, 255, 0.7);
+    height: 100vh;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+}
+
+.section { 
+    padding: 2rem 3rem;
+    flex: 1;
+} 
+
+main {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.diagnostic-container {
+
+    width: (45rem ,90%, 100rem);
+   
+    border: .1rem solid rgba(0, 0, 0, 0.3);
+    border-radius: .7rem;
+
+    padding: 0rem 1rem 4rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.diagnostic-container header {
+    margin: 0rem 0 3rem;
+    height: auto;
+    padding-left: 1rem;
+
+
+    display: flex;
+    align-items: center;
+}
+
+.diagnostic-container header img {
+    height: clamp(5rem, 13vw, 8rem);
+
+    margin-right: clamp(1.3rem, 4vw, 2rem);
+    margin-bottom: clamp(6rem, 12vw, 9rem);
+}
+
+.diagnostic-container .data-user {
+    margin-top: 4rem;
+}
+
+.diagnostic-container .name {
+    font-family: Inter;
+    font-weight: bold;
+    font-size: clamp(1.8rem, 3.5vw, 2.3rem);
+
+    color: #28DF99;
+
+    margin-bottom: 1.3rem;
+}
+
+.diagnostic-container p + p {
+    margin-bottom: .5rem;
+}
+
+.diagnostic-container .year-old,
+.diagnostic-container .sex,
+.diagnostic-container .email,
+.diagnostic-container .whatsapp,
+.diagnostic-container .about {
+    
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    font-size: clamp(1rem, 1.8vw, 1.2rem);
+
+    color: #2EC1AC;
+
+    word-wrap: break-word;
+    width: 20rem;
+    width: clamp(20rem, 4vw, 33rem);
+
+}
+
+
+
+hr {
+    width: 80% ;
+
+
+    border: 1px solid rgba(0, 0, 0, 0.3)
+}
+
+.symptoms {
+    margin-top: 3rem;
+}
+
+.input-block {
+    margin-left: 2rem;
+    word-wrap: break-word;
+}
+
+.input-block + .input-block {
+    margin-top: 2rem;
+    width: 30rem;
+}
+
+.label-checkbox {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: clamp(.8rem, 2.5vw, 1.5rem);
+
+    color: rgba(77, 213, 153, 0.5);
+}
+
+.label-checkbox::after {
+    content: "";
+    display: block;
+
+    width: 20rem;
+    border-bottom:  .2rem solid rgba(0, 0, 0, 0.1);
+    margin: .4rem 0 1rem 0;
+}
+
+input[type="radio"] {
+    height: initial;
+    width: initial;
+}
+
+.checkbox-container {
+    margin-top: .5rem;
+}
+
+.checkbox-container label{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.3rem;
+
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.checkbox-container label ~ label {
+    margin-left: 2rem;
+}
+
+.checkbox-container input {
+    display: none;
+}
+
+.checkbox-container input[type="radio"] + label::before {
+    content: "\2714";
+    background-color: rgba(235, 242, 245, 0.5);
+    border: .1em solid #C4C4C4;
+    border-radius: 0.2em;
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    padding-left: 0.10rem;
+    padding-bottom: 0.4rem;
+    margin-right: .5em;
+
+    font-size: 1.1rem;
+
+    vertical-align: bottom;
+    color: transparent;
+    transition: .2s;
+
+    overflow: hidden;
+}
+
+.checkbox-container input[type="radio"] + label:active::before {
+    transform: scale(0);
+}
+
+input[type="radio"]:checked + label::before {
+    background-color: #4DD599;
+    border-color: #4DD599;
+    color: #fff;
+}
+
+.line:nth-child(4) {
+    margin: 4rem 0 3rem;
+
+}
+
+.diagnostic {
+    width: clamp(30rem, 100%, 40rem);
+    height: 10rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.diagnostic .circle {
+    height: 10rem;
+    width: 10rem;
+
+    margin-left: 1rem;
+
+    border-radius: 50%;
+
+    background: #28DF99;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.diagnostic .circle span {
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: bold;
+
+    font-family: "inter";
+
+}
+
+.diagnostic p {
+    width: 18rem;
+
+    font-size: 1.3rem;
+    font-family: Inter;
+    font-weight: bold;
+
+    color: #28DF99;
+}
+
+
+.line:nth-child(6) {
+    margin: 4rem 0 2rem;
+
+}
+
+.buttons {
+    margin-top: 2rem;
+
+
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.buttons .button-preoceed {
+    height: 3rem;
+    width: 14rem;
+    border-radius: .10rem;
+    
+    color: rgba(241, 241, 241, 0.9);
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    text-decoration: none;
+    
+    font-size: 1.5rem;
+    background-color: #35CB91;
+    
+    transition: background .1s;
+}
+
+.buttons .button-preoceed:hover {
+    background-color: #1dc283;
+
+}
+
+.buttons .button-delete {
+    height: 3rem;
+    width: 14rem;
+    border-radius: .10rem;
+    border: none;
+    background: rgba(255, 70, 70, 0.9);
+    
+    color: rgba(241, 241, 241, 0.9);
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    text-decoration: none;
+    
+    font-size: 1.5rem;
+    
+    cursor: pointer;
+    outline: none;
+
+    transition: background .1s;
+}
+
+.buttons .button-delete:hover {
+    background: rgba(216, 22, 22, 0.9);
+}
+
+
+@media(min-width:550px) {
+    .symptoms label {
+        width: 30rem;
+    }    
+    
+    .checkbox-container label ~ label {
+        margin-left: 1rem;
+    }
+
+    .checkbox-container label {
+        font-size: 1.4rem;
+    }
+
+    .checkbox-container input[type="radio"] + label::before {
+        width: 1.4rem;
+        height: .8rem;
+        padding-left: .2rem;
+        padding-bottom: 0.8rem;
+        margin-right: .5em;
+
+        font-size: 1.3rem;
+    }
+
+
+}
+
+
+
+@media(min-width:760px) {
+
+}

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coronac | Diagnóstico</title>
+
+    <link rel="icon" href="public/images/connected-world.png">
+
+    <link rel="stylesheet" href="public/css/main.css">
+    <link rel="stylesheet" href="public/css/animation.css">
+    <link rel="stylesheet" href="public/css/header-footer-menu.css">
+    <link rel="stylesheet" href="public/css/page-diagnostic.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+
+</head>
+
+<body id="page-diagnostic">
+    <div id="container">
+        <header class="header">
+            <h1 class="logo">Coronac</h1>
+
+            <input type="checkbox" id="menu-hamburguer" style="display: none;" onclick="menuHamburguer()">
+            <label class="menu-hamburguer" for="menu-hamburguer" id="menu">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </label>
+
+            <nav class="nav-bar">
+                <a href="page-cases.html">Casos </a>
+                <a href="page-cases.html">Fazer teste </a>
+                <a href="">Teste de outras pessoas</a>
+                <a href="page-take-care.html">Como se cuidar durante a pandemia</a>
+                <a href="diagnostic.html">Quem somos</a>
+                <img  src="./public/images/bar.svg" alt="">
+                <a target="_blank" href="https://github.com/julioceno/coronac">Repositório</a>
+            </nav>
+        </header>
+      
+        <aside class="menu-bar animate-up" id="menu-bar">
+            <nav class="nav" id="nav">
+               <ul>
+                   <li><a href="page-cases.html">Casos</a></li>
+                   <li><a href="">Fazer teste</a></li>
+                   <li><a href="">Teste de outras pessoas</a></li>
+                   <li><a href="page-take-care.html">Como se cuidar durante a pandemia</a></li>
+                   <li><a href="diagnostic.html">Quem somos</a></li>
+                   <li><a target="_blank" href="https://github.com/julioceno/coronac">Repositório</a></li>
+               </ul>
+           </nav>
+   </aside>
+   
+        <section class="section" id="section">
+
+            <main>
+
+
+                <div class="diagnostic-container">
+
+                    <header>
+                        <img src="./public/images/woman.svg" alt="">
+
+                        <div class="data-user">
+                            <p class="name"> Carla da Silva</p>
+                            <p class="year-old">Idade: 15</p>
+                            <p class="sex ">Sexo: Feminino</p>
+                            <p class="email">Email: carlaaaaaaaaaaaaaa@gmail.com</p>
+                            <p class="whatsapp">Whatsapp:21298439493</p>
+                            <p class="about">Sobre: Meu nome é Carla tenho 15 anos e acho que estou com covid-19</p>
+                        </div>
+                    </header>
+
+                    <hr class="line">
+
+
+                    <div class="symptoms">
+
+                        <div class="input-block">
+                            <label class="label-checkbox" for="">Você teve dor de cabeça recentimente?</label>
+
+                            <div class="checkbox-container">
+                                <input type="radio" name="headache" id="headache1"  value="Masculino" >
+                                <label for="headache1">Sim</label>
+                                <input type="radio" name="headache" id="headache2" value="Feminino" checked>
+                                <label for="headache2">Não</label>
+                            </div>
+
+                        </div>
+
+
+                        <div class="input-block">
+                            <label class="label-checkbox" for="">Você teve febre recentimente?</label>
+
+                            <div class="checkbox-container">
+                                <input type="radio" name="fever" id="fever1"  value="Masculino" >
+                                <label for="fever1">Sim
+                                </label>
+                                <input type="radio" name="fever" id="fever2" value="Feminino" checked>
+                                <label for="fever2">Não</label>
+                            </div>
+
+                        </div>
+
+                        <div class="input-block">
+                            <label class="label-checkbox" for="">Você teve diarreia recentimente?</label>
+
+                            <div class="checkbox-container">
+                                <input type="radio" name="diarrhea" id="diarrhea1"  value="Masculino" >
+                                <label for="diarrhea1">Sim
+                                </label>
+                                <input type="radio" name="diarrhea" id="diarrhea2" value="Feminino" checked>
+                                <label for="diarrhea2">Não</label>
+                            </div>
+
+                        </div>
+
+                        <div class="input-block">
+                            <label class="label-checkbox" for="">Você teve tosse seca recentimente?</label>
+
+                            <div class="checkbox-container">
+                                <input type="radio" name="dry-cough" id="dry-cough1"  value="Masculino" >
+                                <label for="dry-cough1">Sim
+                                </label>
+                                <input type="radio" name="dry-cough" id="dry-cough2" value="Feminino" checked>
+                                <label for="dry-cough2">Não</label>
+                            </div>
+
+                        </div>
+
+                        <div class="input-block">
+                            <label class="label-checkbox" for="">Você teve problemas respiratórios recentimente?</label>
+
+                            <div class="checkbox-container">
+                                <input type="radio" name="breath" id="breath1"  value="Masculino" >
+                                <label for="breath1">Sim
+                                </label>
+                                <input type="radio" name="breath" id="breath2" value="Feminino" checked>
+                                <label for="breath2">Não</label>
+                            </div>
+
+                        </div>
+
+                        <div class="input-block">
+                            <label class="label-checkbox" for="">Você teve perda de paladar ou ofato recentimente?</label>
+
+                            <div class="checkbox-container">
+                                <input type="radio" name="taste-and-smell" id="taste-and-smell1"  value="Masculino" >
+                                <label for="taste-and-smell1">Sim
+                                </label>
+                                <input type="radio" name="taste-and-smell" id="taste-and-smell2" value="Feminino" checked>
+                                <label for="taste-and-smell2">Não</label>
+                            </div>
+
+                        </div>
+
+                        <div class="input-block">
+                            <label class="label-checkbox" for="">Você teve conjutivite recentimente?</label>
+
+                            <div class="checkbox-container">
+                                <input type="radio" name="conjunctivitis" id="conjunctivitis1"  value="Masculino" >
+                                <label for="conjunctivitis1">Sim
+                                </label>
+                                <input type="radio" name="conjunctivitis" id="conjunctivitis2" value="Feminino" checked>
+                                <label for="conjunctivitis2">Não</label>
+                            </div>
+
+                        </div>
+
+                        <div class="input-block">
+                            <label class="label-checkbox" for="">Você teve dor de garganta recentimente?</label>
+
+                            <div class="checkbox-container">
+                                <input type="radio" name="sore-throat" id="sore-throat1"  value="Masculino" >
+                                <label for="sore-throat1">Sim
+                                </label>
+                                <input type="radio" name="sore-throat" id="sore-throat2" value="Feminino" checked>
+                                <label for="sore-throat2">Não</label>
+                            </div>
+
+                        </div>
+
+                        <div class="input-block">
+                            <label class="label-checkbox" for="">Você teve dores ou desconforto recentimente?</label>
+
+                            <div class="checkbox-container">
+                                <input type="radio" name="pain-or-discomfort" id="pain-or-discomfort1"  value="Masculino" >
+                                <label for="pain-or-discomfort1">Sim
+                                </label>
+                                <input type="radio" name="pain-or-discomfort" id="pain-or-discomfort2" value="Feminino" checked>
+                                <label for="pain-or-discomfort2">Não</label>
+                            </div>
+
+                        </div>
+
+                        <div class="input-block">
+                            <label class="label-checkbox" for="">Você  se sente cansado com facilidade?</label>
+
+                            <div class="checkbox-container">
+                                <input type="radio" name="tiredness" id="tiredness1"  value="Masculino">
+                                <label for="tiredness1">Sim
+                                </label>
+                                <input type="radio" name="tiredness" id="tiredness2" value="Feminino">
+                                <label for="tiredness2">Não</label>
+                            </div>
+
+                            </div>
+                    </div>
+
+                    <hr class="line">
+
+                    <div class="diagnostic">
+
+                        <div class="circle">
+                            <span>3/10</span>
+                            
+                        </div>
+                        <p>Você marcou 3 de 10, faça uma mini quarentena em casa e se os sintomas continuarem a aparecer volte 
+                            aqui novamente!</p>
+                    </div>
+
+                    <hr class="line">
+
+                    <div class="buttons">
+                        <a class="button-preoceed" href="">Prosseguir</a>
+                        <input class="button-delete" type="submit" value="Deletar do feed">
+                    </div>
+                </div>
+ 
+             </main>
+            
+
+        </section>
+
+    <footer class="footer">
+       <header class="header-footer">
+            <h3 class="logo-footer">Coronac</h3>
+
+            <p>Nós dá Coronac vamos sempre está aqui pra cuidar de você  :)</p>
+       </header>
+
+       <nav class="contacts">
+           <a href="https://github.com/julioceno/coronac"><img src="./public/images/whatsapp.svg" alt=""></a>
+           <a href="https://github.com/julioceno/coronac"><img src="./public/images/instagram.svg" alt=""></a>
+           <a href="https://github.com/julioceno/coronac"><img src="./public/images/twitter.svg" alt=""></a>
+           <a href="https://github.com/julioceno/coronac"><img src="./public/images/facebook.svg" alt=""></a>
+       </nav>
+    </footer>
+
+
+</div>
+</body>
+<script src="public/javascript/header.js"></script>
+<script src="public/javascript/page-test-covid.js"></script>
+</html>
