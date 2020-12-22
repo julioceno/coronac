@@ -117,7 +117,7 @@ hr {
     font-family: Nunito;
     font-style: normal;
     font-weight: normal;
-    font-size: clamp(.8rem, 2.5vw, 1.5rem);
+    font-size: clamp(1.5rem, 2.5vw, 1.5rem);
 
     color: rgba(77, 213, 153, 0.5);
 }
