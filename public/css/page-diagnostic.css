@@ -340,4 +340,101 @@ input[type="radio"]:checked + label::before {
 
 @media(min-width:760px) {
 
+    .diagnostic-container {
+        width: 90%;
+        max-width: 75rem;
+    }
+    
+    .diagnostic-container header {
+        margin: 4rem 0 3rem;
+        padding-left: 1rem;
+    
+        max-width: 37rem;
+        justify-content: space-between;
+    }
+
+    .diagnostic-container header img {
+        height: clamp(7rem, 18vw, 12rem);
+    
+        margin-right: clamp(3rem, 4vw, 5rem);
+    }
+        
+    .diagnostic-container .name {
+        font-size: clamp(2rem, 4vw, 2.6rem);
+    }
+
+    .diagnostic-container p + p {
+        margin-bottom: .8rem;
+    }
+
+    .diagnostic-container .year-old,
+    .diagnostic-container .sex,
+    .diagnostic-container .email,
+    .diagnostic-container .whatsapp,
+    .diagnostic-container .about {
+        font-size: 1.3rem;
+        width: clamp(26rem, 30vw, 33rem);
+    }
+
+
+    .symptoms .grid{
+        display: grid;
+
+        grid-template-areas:  "headache fever" "diarrhea dry-cough" "breath taste-and-smell" "conjunctivitis sore-throat" "pain-or-discomfort tiredness";
+        grid-template-columns: 1fr ;
+        grid-template-rows: clamp(2vw, auto, 10rem) 13vw  13vw;
+
+        margin-top: 3rem;
+        padding: 0 (2rem, 5vw, 6rem);
+        margin-right:(1rem, 2vw, 4rem);
+    }
+
+    .symptoms .grid .input-block {
+        min-width: 25rem;
+        width: auto;
+        max-width: 32rem;
+    }
+    
+    .symptoms .grid .input-block:nth-child(2) {
+        margin-top: clamp(0rem, -.1vw, -2rem);
+    }
+
+    .diagnostic {
+        width: 80%;
+        max-width: 45rem;
+    }
+    
+    .diagnostic .circle {
+        height: 12rem;
+        width: 12rem;
+    }
+    
+    .diagnostic .circle span {
+        font-size: 3rem;
+    }
+    
+    .diagnostic p {
+        width: 25rem;
+        font-size: 2.2vh;
+
+        margin-right: 2rem;
+    }
+
+    .buttons {
+        max-width: 45rem;
+    }
+
+    .buttons .button-preoceed {
+        height: 4rem;
+        width: 18rem;
+        
+        font-size: 2rem;
+    }
+
+    .buttons .button-delete {
+        height: 4rem;
+        width: 18rem;
+        
+        font-size: 2rem;
+    }
 }
