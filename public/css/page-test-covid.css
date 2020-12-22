@@ -15,7 +15,13 @@
     display: flex;
     
     justify-content: center;
+    align-items: center;
 } 
+
+main {
+    display: flex;
+    justify-content: center;
+}
 
 .form {
     min-height: 90rem;
@@ -39,7 +45,9 @@
 }
 
 
-.form .data {
+.form .data,
+.form .symptoms,
+.form .permission {
     margin-top: 5rem;
 }
 
@@ -84,8 +92,10 @@ textarea {
     font-family: 'Inter', sans-serif;
     font-size: 1.3rem;
     color: rgba(102, 51, 153, 0.781);
-
+    
+    outline: none;
 }
+
 
 .input-block input,
 .input-block textarea {
@@ -97,6 +107,8 @@ textarea {
     box-sizing: border-box;
     border-radius: 9px;
     padding: 0 .5rem;
+    font-weight: bold;
+
 
 }
 
@@ -114,13 +126,6 @@ textarea {
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
-
-
-
-.form fieldset:nth-child(2) {
-    padding-top: 4rem;
-}
-
 
 .label-checkbox::after {
     content: "";
@@ -185,7 +190,7 @@ input[type="radio"]:checked + label::before {
 }
 
 
-.permission .a {
+.permission .centering {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -194,7 +199,7 @@ input[type="radio"]:checked + label::before {
     max-width: 29rem;
 }
 
-.permission .a p {
+.permission .centering p {
     
     font-family: Nunito;
     font-style: normal;
@@ -206,20 +211,41 @@ input[type="radio"]:checked + label::before {
     color: rgba(0, 0, 0, 0.5);
 }
 
-.permission .a p a{
+.permission .centering p a{
     font-size: 1.3rem;
     color: #F05454;
     cursor: pointer;
     text-decoration: none;
 }
 
+.form input[type=submit] {
+    background: #28DF99;
+    color: #fff;
+    font-size: 1.5rem;
+
+    height: 3rem;
+    width: 15rem;
+    border: none;
+    transition: background .2s;
+
+    margin-top: 2rem;
+}
+
+.form input[type=submit]:hover {
+    background: #15c27f;
+}
+
+    input:focus,
+    textarea:focus {
+        border: .2rem solid #000000a8;
+    } 
+
 
 @media(min-width:450px) {
     .form {
         background-image: url(../images/filling-form-mobile.svg);
         background-repeat: no-repeat;
-        background-size: 43%;
-        background-size: clamp(20rem, 43%, 30rem);
+        background-size: clamp(18rem, 43%, 30rem);
         background-position: clamp(19rem, 90%, 20rem)  -2px;
         background-position: 90%  -10px;
     }
@@ -262,21 +288,123 @@ input[type="radio"]:checked + label::before {
     .form {
         min-height: 90rem;
         height: auto;
-        width: initial;
+        width: 80rem;
 
         border: .1rem solid rgba(0, 0, 0, 0.3);
         border-radius: .7rem;
     
         padding:  3rem;
-        background-image: url(../images/filling-form-desktop.);
+        background-image: url(../images/filling-form-desktop.svg);
         background-repeat: no-repeat;
-        background-size: 43%;
-        background-position: 90%  1%;
+        background-size: 20rem;
+        background-size: 23rem;
+        background-size: clamp(20rem, 32%, 23rem);
+        background-position: 80%  1%;
+
     }
 
-    .form fieldset {
+
+    .data .grid{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+
+        grid-template-areas:  "name email" "about whatsapp" "date sex" ".sex";
+        grid-template-columns: 1fr ;
+        grid-template-rows: clamp(2vw, auto, 10rem) 13vw  13vw;
+
+        margin-top: 4rem;
+        padding: 0 (2rem, 5vw, 6rem);
+        margin-right:(1rem, 2vw, 4rem);
+    }
+
+    .data .grid input,
+    .data .grid textarea {
+        height: 4rem;
+        font-size: 1.5rem;
+    }
+
+   
+    .data .grid .input-block:nth-child(1) {
+        grid-area: name;
+    }
+
+
+    .data .grid .input-block:nth-child(2) {
+        grid-area: about;
+
+    }
+
+    .data .input-block textarea {
+        height: 10rem;
+        max-height: 30rem;
+    }
+
+    .data .grid .input-block:nth-child(3) {
+        grid-area: date;
+    }
+
+    
+    .data .grid .input-block:nth-child(4) {
+        grid-area: email;
+        height: 100%;
+        margin-top: -.1rem;
+    }
+
+    
+    .data .grid .input-block:nth-child(5) {
+        grid-area: whatsapp;
+
+    }
+
+    .data .grid .input-block:nth-child(6) {
+        grid-area: sex;
     }
     
+
+    .symptoms .grid{
+        display: grid;
+
+        grid-template-areas:  "headache fever" "diarrhea dry-cough" "breath taste-and-smell" "conjunctivitis sore-throat" "pain-or-discomfort tiredness";
+        grid-template-columns: 1fr ;
+        grid-template-rows: clamp(2vw, auto, 10rem) 13vw  13vw;
+
+        margin-top: 4rem;
+        padding: 0 (2rem, 5vw, 6rem);
+        margin-right:(1rem, 2vw, 4rem);
+    }
+    
+    .symptoms .grid .input-block:nth-child(2) {
+        margin-top: -.5rem;
+    }
+
+    .symptoms .grid .input-block:nth-child(4) {
+        margin-top: -.5rem;
+    }
+
+    .permission .input-block{
+        margin-top: 3rem;
+    }
+
+    .permission .input-block .centering {
+         max-width: 35rem;
+
+    }
+
+    .permission .input-block .centering p{ 
+        font-size: 1.5rem;
+        width: 20rem;
+
+    }
+
+    .permission .input-block .centering p a{ 
+        font-size: 1.5rem;
+
+    }
+
+
+    .form input[type=submit] {
+        font-size: 2rem;
+    
+        height: 4rem;
+        width: 20rem;
+    }
 }
