@@ -1,0 +1,141 @@
+#page-feed {
+    background: #F0F0F7;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+}
+
+.section { 
+    padding: 2rem 3rem;
+    flex: 1;
+
+    display: flex;
+    
+    justify-content: center;
+} 
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.diagnostics {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5rem 0 ;
+}
+
+.diagnostic {
+    width: clamp(38rem, 70vw, 45rem);
+    height: 15rem;
+    height: clamp(1rem, 30vw, 16.5rem);
+    background-color: #fff;
+
+    border: 1px solid rgba(0, 0, 0, 0.3);
+
+    border-radius: 1rem;
+
+    padding-top: 2rem;
+
+    display: flex;
+
+}
+
+.diagnostic + .diagnostic{
+    margin-top: 6rem;
+}
+
+.diagnostic .data {
+    display: flex;
+    margin-left: 3rem;
+}
+
+.diagnostic img {
+    height: 14vw;
+    max-height: 8.5rem;
+}
+
+.informations {
+    margin: 1.5rem  0 0 1.5rem;
+
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;   
+    color: #2EC1AC;
+    font-size: clamp(1.2rem, 3vw, 1.4rem);
+
+    width: 100%;
+}
+
+.informations .name {
+    font-size: clamp(2.5rem, 5vw, 3rem);
+    color: #28DF99;
+
+    margin-bottom: .2rem;
+}
+
+.informations .name ~ p {
+    margin-top: .7rem;
+}
+
+.about {
+    display: none;
+}
+
+.right {
+    margin-left: clamp(3rem, 5vw, 8rem);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.id {
+    font-size: 2rem;
+    font-family: 'Inter', sans-serif;
+    color:  rgba(0, 0, 0, 0.575);
+    text-align: end;
+    margin-right: .5rem;
+}
+
+.sympthons {
+    border-radius: .5rem;
+    background-color: #2EC1AC;
+    height: 2.5rem;
+    width: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 1rem;
+}
+
+.sympthons span {
+    color: #fff;
+    font-size: 1.4rem;
+    
+    font-family: Inter;
+    font-weight: bold
+}
+
+
+@media(min-width: 720px) {
+    .diagnostic {
+        width: clamp(40rem, 60vw, 55rem);
+        min-height: 20rem;
+        height: auto;
+        padding-bottom: 1.5rem;
+
+        justify-content: space-between;
+
+    }
+
+    .right {
+        margin-right: 2rem;
+    }
+    
+
+}
