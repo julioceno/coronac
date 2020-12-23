@@ -491,9 +491,7 @@ input[type="radio"]:checked + label::before {
     .button a.button-come-back {
         height: 5.5rem;
         width: 28rem;
-    
         font-size: 2.5rem;
-    
     }
     
 }

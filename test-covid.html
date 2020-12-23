@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="public/css/main.css">
     <link rel="stylesheet" href="public/css/animation.css">
     <link rel="stylesheet" href="public/css/header-footer-menu.css">
+    <link rel="stylesheet" href="public/css/pop-ups.css">
     <link rel="stylesheet" href="public/css/page-test-covid.css">
 
     <!-- fonts -->
@@ -22,7 +23,7 @@
 
 <body id="page-test-covid">
     <div id="container">
-        <header class="header">
+        <header class="header" id="header">
             <h1 class="logo">Coronac</h1>
 
             <input type="checkbox" id="menu-hamburguer" style="display: none;" onclick="menuHamburguer()">
@@ -53,12 +54,12 @@
                </ul>
            </nav>
    </aside>
-   
+
         <section class="section" id="section">
 
             <main>
 
-            <form action="" class="form animate-appear">
+            <form action="" class="form animate-appear" onsubmit="validate(event)">
                 <fieldset class="data">
                     <legend >Dados</legend>
 
@@ -69,8 +70,8 @@
                     </div>
 
                     <div class="input-block">
-                        <label for="">Sobre</label>
-                        <textarea  name="" ></textarea>
+                        <label for="about" id="click-about">Sobre</label>
+                        <textarea  id="about" name="" ></textarea>
                     </div>
 
                     <div class="input-block">
@@ -106,7 +107,6 @@
 
                 <fieldset class="symptoms">
                     <legend>Sintomas</legend>
-
 
                     <div class="grid">
                     <div class="input-block">
@@ -239,9 +239,8 @@
 
                     </div>
                     
-                </div>
+                    </div>
                     
-
 
                 </fieldset>
 
@@ -270,14 +269,12 @@
                 </fieldset>
 
 
-                <input type="submit" value="Enviar">
+                <input type="submit" value="Enviar" >
             </form> 
 
             </main>
         </section>
 
-
-    
     <footer class="footer">
        <header class="header-footer">
             <h3 class="logo-footer">Coronac</h3>
@@ -294,6 +291,27 @@
     </footer>
 
 
+    <div class="pop-ups">
+
+        <div class="test-explanation animate-appear ">
+            <p>Esse teste de covid 19 <span>Não é valido!</span> Recomendamos que se você tiver com algum dos sintomas vá até um médico ou especialista.</p>
+        
+            <input type="button" value="Ok" onclick="hidePopup()">
+        </div>
+
+        <div class="information-data animate-appear">
+            <p> Recomendamos fortemente que você deixe seu teste exposto, pois isso vai mostrar para as pessoas que o coronavírus ainda não foi embora. Entretanto seu email e sua senha não ficarão expostas caso seu teste vá para o feed. </p>
+        
+            <input type="button" value="Ok" onclick="hidePopup()">
+        </div>
+
+        <div class="fill-in-about animate-appear">
+            <p> Pra enviar o formulário para o feed você precisa prencher o campo <span>Sobre</span> </p>
+        
+            <input type="button" id="come-back-about" value="Ok" onclick="hidePopup()">
+        </div>
+   </div>
+   
 </div>
 </body>
 <script src="public/javascript/header.js"></script>

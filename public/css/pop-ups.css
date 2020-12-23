@@ -1,0 +1,169 @@
+.pop-ups {
+    min-height: 100%;
+    height: auto;
+    width: 100%;
+
+    background-color: rgba(255, 255, 255, 0.603);
+
+    position: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    display: none;
+}
+
+.test-explanation {
+    width: 30rem;
+    height: 28rem;
+
+
+    background-color: #fff;
+    border: 2px solid gray;
+    border-radius: 1rem;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bolder;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    display: none;
+}
+
+.test-explanation p {
+    width: 24rem;
+
+    
+    text-align: center;
+}
+
+.test-explanation p span {
+    color: #35CB91;
+    font-size: 3rem;
+}
+
+.test-explanation input {
+    border: none;
+    background-color: initial;
+    margin-top: 3rem;
+    background-color: #35CB91;
+    border-radius: .20rem;
+
+    height: 4rem;
+    width: 14rem;
+    
+    color: #fff;
+    font-size: 2.2rem;
+    
+    outline: none;
+
+}
+
+.test-explanation input:hover {
+    background-color: #11b979;
+}
+
+
+
+
+
+.information-data {
+    width: 32rem;
+    height: 30rem;
+
+    background-color: #fff;
+    border: 2px solid gray;
+    border-radius: 1rem;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bolder;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    display: none;
+}
+
+.information-data p {
+    text-align: center;
+    padding: 0 2.3rem;
+}
+
+.information-data input {
+    border: none;
+    background-color: initial;
+    margin-top: 3rem;
+    background-color: #35CB91;
+    border-radius: .20rem;
+
+    height: 4rem;
+    width: 12rem;
+    
+    color: #fff;
+    font-size: 2.2rem;
+    
+    outline: none;
+
+}
+
+.information-data input:hover {
+    background-color: #11b979;
+}
+
+
+/* aaaaaaaaa */
+
+
+.fill-in-about  {
+    width: 25rem;
+    height: 23rem;
+
+    background-color: #fff;
+    border: 2px solid gray;
+    border-radius: 1rem;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bolder;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    display: none;
+}
+
+.fill-in-about p {
+    text-align: center;
+    padding: 0 2.3rem;
+}
+.fill-in-about p span {
+    color: #35CB91;
+}
+
+.fill-in-about input {
+    border: none;
+    background-color: initial;
+    margin-top: 3rem;
+    background-color: #35CB91;
+    border-radius: .20rem;
+    height: 3.5rem;
+    width: 10rem;
+    color: #fff;
+    font-size: 2.2rem;
+    
+    outline: none;
+}
+
+.fill-in-about input:hover {
+    background-color: #11b979;
+}
