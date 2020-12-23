@@ -297,9 +297,10 @@ input[type="radio"]:checked + label::before {
 }
 
 .diagnostic p {
-    width: 18rem;
+    width: 35vw;
+    max-width: 20rem;
 
-    font-size: clamp(.8rem, 3vw, 3rem);
+    font-size: clamp(1.3rem, 2vw, 3rem);
     font-family: Inter;
     font-weight: bold;
 
@@ -364,4 +365,135 @@ input[type="radio"]:checked + label::before {
     }
 
 
+}
+
+
+@media(min-width: 720px) {
+    .test-container {
+        width: 100%;
+        max-width: 75rem;
+    }
+
+    .test-container header {
+        width: 100%;
+        max-width: 80rem;
+        padding: 0 3rem;
+    }
+    
+        
+    .test-container header .informations img {
+        height: 12vw;
+        max-height: 11.5rem;
+    }
+
+    .test-container .data-user {
+        margin-top: 1.2rem;
+    }
+
+    .test-container .name {
+        font-size: clamp(2rem, 4vw, 3rem);
+    }
+
+    .test-container p + p {
+        margin-bottom: .7rem;
+    }
+
+    .test-container .year-old,
+    .test-container .sex,
+    .test-container .email,
+    .test-container .whatsapp,
+    .test-container .about {
+        font-size: clamp(1.3rem, 1.5vw, 1.5rem);
+
+        width: clamp(27rem, 6vw, 40rem);
+
+    }
+
+    .delete-test {
+        margin-right: clamp(0rem, 20vw ,6rem);
+    }
+
+    .line {
+        max-width: 65rem;
+    }
+    
+    .delete-test input{
+        width: 14.5vw;
+        height: 16vw;
+        
+        max-width: 14.5rem;
+        max-height: 14.5rem;
+    
+        background-image: url(../images/delete-test.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    
+        border: none;
+        background-color: rgba(255, 255, 255, 0.7);
+    
+        outline: none;
+    }
+
+
+    .symptoms .grid{
+        display: grid;
+
+        grid-template-areas:  "headache fever" "diarrhea dry-cough" "breath taste-and-smell" "conjunctivitis sore-throat" "pain-or-discomfort tiredness";
+        grid-template-columns: 1fr ;
+        grid-template-rows: clamp(2vw, auto, 10rem) 13vw  13vw;
+
+        margin-top: 3rem;
+        padding: 0 (2rem, 5vw, 6rem);
+        margin-right:(1rem, 2vw, 4rem);
+    }
+
+    .symptoms .grid .input-block {
+        min-width: 25rem;
+        width: auto;
+        max-width: 32rem;
+    }
+    
+    .symptoms .grid .input-block:nth-child(2) {
+        margin-top: clamp(0rem, -.1vw, -2rem);
+    }
+
+
+    .diagnostic {
+        width: 63%;
+        max-width: 50rem;
+        height: 10rem;
+    
+        margin: 3.5rem 0 4rem;
+
+    }
+    
+    .diagnostic .circle {
+        height: 12rem;
+        width: 12rem;
+
+        max-height: none;
+        max-width: none;
+    
+    }
+    
+    .diagnostic .circle span {
+        font-size: 2.5rem;
+    }
+    
+    .diagnostic p {
+        width: 33vw;
+        max-width: 30rem;
+        font-size: 1.7rem;
+
+    }
+
+    .button a.button-come-back {
+        height: 5.5rem;
+        width: 28rem;
+    
+        font-size: 2.5rem;
+    
+    }
+    
 }

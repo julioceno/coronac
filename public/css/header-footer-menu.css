@@ -86,7 +86,7 @@
 
 }
 
-.nav ul li:nth-child(6)  {
+.nav ul li:nth-child(5)  {
 
     margin-left: 9rem;
 
@@ -104,7 +104,7 @@
 
 }
 
-.nav ul li:nth-child(6):hover  {
+.nav ul li:nth-child(5):hover  {
     background: #25bda6d0;
 }
 
@@ -120,12 +120,12 @@
     font-weight: bolder;
 }
 
-.nav ul li:nth-child(6) a{
+.nav ul li:nth-child(5) a{
         color: #ffffffcb
 }
 
 
-.nav ul li:nth-child(6) a:hover{
+.nav ul li:nth-child(5) a:hover{
     font-weight: bold;
 }
 
@@ -199,9 +199,9 @@
     
     .nav-bar a {
         font-family: Inter;
-        font-size: clamp(1rem, 1.4vw, 1.7rem);
+        font-size: clamp(1rem, 1.3vw, 1.7rem);
         text-decoration: none;
-        margin-left: clamp(1rem, 1.5vw, 2.5rem);
+        margin-left: clamp(0rem, 1vw, 2.3rem);
         text-align: center;
 
         color: #ffffffd5;
@@ -216,10 +216,11 @@
     .nav-bar img {
         height: 4rem;
         height: clamp(4rem, 5.5vw, 5rem);
-        margin-left: 1.5rem;
+        margin-left: 1.3rem;
+        margin-right: 1rem;
     }
 
-    .nav-bar a:nth-child(7) {
+    .nav-bar a:nth-child(6) {
         width: clamp(13rem, 10vw  ,13rem);
         height: clamp(3.5rem, 4vw, 4.5rem );
         
@@ -237,7 +238,7 @@
 
     }
 
-    .nav-bar a:nth-child(7):hover {
+    .nav-bar a:nth-child(6):hover {
         background: #2ec1abbe;
     }
 
