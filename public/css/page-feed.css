@@ -38,7 +38,7 @@ main {
 
     border-radius: 1rem;
 
-    padding-top: 2rem;
+    padding: 2rem 0;
 
     display: flex;
 
@@ -104,27 +104,29 @@ main {
 .sympthons {
     border-radius: .5rem;
     background-color: #2EC1AC;
-    height: 2.5rem;
-    width: 12rem;
+    height: 2.3rem;
+    width: 11.2rem;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    margin-bottom: 1rem;
+    margin-bottom: -1rem;
 }
 
 .sympthons span {
     color: #fff;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     
     font-family: Inter;
     font-weight: bold
 }
 
 
+
+
 @media(min-width: 720px) {
     .diagnostic {
-        width: clamp(40rem, 60vw, 55rem);
+        width: clamp(50rem, 60vw, 55rem);
         min-height: 20rem;
         height: auto;
         padding-bottom: 1.5rem;
@@ -133,9 +135,45 @@ main {
 
     }
 
-    .right {
-        margin-right: 2rem;
+    
+    .informations {
+        font-family: 'Inter', sans-serif;
+        font-weight: bold;   
+        color: #2EC1AC;
+        font-size: clamp(1.2rem, 3vw, 1.4rem);
+
+        width: 100%;
+        max-width: 26rem;
+    }
+
+    .about {
+        display: block;
+        font-size: clamp(1.06rem, 1.3vw, 1.3rem);
+
     }
     
 
+    .right {
+        margin-right: 2rem;
+    }
+
+    
+
+    
+    .sympthons {
+        height: 3rem;
+        width: 12rem;
+        margin-bottom: -1rem;
+    }
+
+    .sympthons span {
+        color: #fff;
+        font-size: 1.3rem;
+        
+        font-family: Inter;
+        font-weight: bold
+    }
+
 }
+
+
