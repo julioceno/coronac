@@ -121,7 +121,13 @@ main {
     font-weight: bold
 }
 
+@media(min-width: 600px) {
 
+    .right {
+        margin-left: clamp(2rem, 10vw, 10rem);
+    }
+    
+}
 
 
 @media(min-width: 720px) {

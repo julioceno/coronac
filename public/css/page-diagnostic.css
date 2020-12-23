@@ -190,7 +190,6 @@ input[type="radio"]:checked + label::before {
 
 .line:nth-child(4) {
     margin: 4rem 0 3rem;
-
 }
 
 .diagnostic {

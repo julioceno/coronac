@@ -1,0 +1,367 @@
+#page-feed {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+}
+
+.section { 
+    padding: 4rem 2rem 0;
+    flex: 1;
+} 
+
+
+
+main {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    padding: 4rem 0;
+}
+
+.test-container {
+    width: (45rem ,90%, 100rem);
+
+    height: auto;
+   
+    border: .1rem solid rgba(0, 0, 0, 0.3);
+    border-radius: .7rem;
+
+    padding: 0  0 4rem;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.test-container header {
+    height: auto;
+    display: flex;
+
+    overflow: hidden;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.test-container .informations {
+    display: flex;
+
+    margin-top: 3rem;
+    margin-left: 1rem;
+}
+
+.test-container header .informations img {
+    height: clamp(5rem, 13vw, 8rem);
+
+    margin-right: clamp(1.3rem, 4vw, 2rem);
+    margin-bottom: clamp(6rem, 12vw, 9rem);
+}
+
+.test-container .data-user {
+    margin-top: 1.2rem;
+}
+
+.test-container .name {
+    font-family: Inter;
+    font-weight: bold;
+    font-size: clamp(1.8rem, 3.5vw, 2.3rem);
+
+    color: #28DF99;
+
+    margin-bottom: 1.3rem;
+}
+
+.test-container p + p {
+    margin-bottom: .5rem;
+}
+
+.test-container .year-old,
+.test-container .sex,
+.test-container .email,
+.test-container .whatsapp,
+.test-container .about {
+    
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    font-size: clamp(1rem, 1.8vw, 1.2rem);
+
+    color: #2EC1AC;
+
+    word-wrap: break-word;
+    width: 20rem;
+    width: clamp(20rem, 4vw, 33rem);
+
+}
+
+.delete-test {
+    margin-right: 1.5rem;
+}
+
+.delete-test input{
+    width: 20vw;
+    height: 20vw;
+    
+    max-width: 13rem;
+    max-height: 13rem;
+
+    background-image: url(../images/delete-test.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    border: none;
+    background-color: rgba(255, 255, 255, 0.7);
+
+    outline: none;
+}
+
+.line {
+    width: 80% ;
+    border: 1px solid rgba(0, 0, 0, 0.3)
+}
+
+.view-symptoms {
+    margin: clamp(2rem, 3vw, 5rem) 0 clamp(2rem, 9vw, 7rem);
+
+    border: none;
+    background-color: initial;
+
+
+    width: 20rem;
+    height: 5rem;
+    
+    border: 2px solid #000000;
+    border-radius: .8rem;
+
+    
+
+    font-size: 1.56rem;
+    font-family: Inter;
+    font-weight: bold;
+    color: #000000;
+
+    transition: background 2s;
+    outline: none;
+}
+
+.view-symptoms:hover {
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    color:  rgba(0, 0, 0, 0.5);
+}
+
+
+.view-symptoms:focus {
+    border: 2px solid #28DF99;
+    color: #28DF99 ;
+}
+
+.symptoms {
+    margin-bottom: 3rem;
+}
+
+.input-block {
+    word-wrap: break-word;
+}
+
+.input-block + .input-block {
+    margin-top: 2rem;
+    width: 30rem;
+}
+
+.label-checkbox {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+
+
+    color: rgba(77, 213, 153, 0.5);
+}
+
+.label-checkbox::after {
+    content: "";
+    display: block;
+
+    width: 20rem;
+    border-bottom:  .2rem solid rgba(0, 0, 0, 0.1);
+    margin: .4rem 0 1rem 0;
+}
+
+input[type="radio"] {
+    height: initial;
+    width: initial;
+}
+
+.checkbox-container {
+    margin-top: .5rem;
+}
+
+.checkbox-container label{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.3rem;
+
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.checkbox-container label ~ label {
+    margin-left: 2rem;
+}
+
+.checkbox-container input {
+    display: none;
+}
+
+.checkbox-container input[type="radio"] + label::before {
+    content: "\2714";
+    background-color: rgba(235, 242, 245, 0.5);
+    border: .1em solid #C4C4C4;
+    border-radius: 0.2em;
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    padding-left: 0.10rem;
+    padding-bottom: 0.4rem;
+    margin-right: .5em;
+
+    font-size: 1.1rem;
+
+    vertical-align: bottom;
+    color: transparent;
+    transition: .2s;
+
+    overflow: hidden;
+}
+
+.checkbox-container input[type="radio"] + label:active::before {
+    transform: scale(0);
+}
+
+input[type="radio"]:checked + label::before {
+    background-color: #4DD599;
+    border-color: #4DD599;
+    color: #fff;
+}
+
+.diagnostic {
+    width: clamp(20rem, 60vw, 33rem);
+    height: 10rem;
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 1rem 0 0;
+}
+
+.diagnostic .circle {
+    height: 15vw;
+    width: 15vw;
+
+    max-height: 9rem;
+    max-width: 9rem;
+
+
+    margin-left: 1rem;
+
+    border-radius: 50%;
+
+    background: #28DF99;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.diagnostic .circle span {
+    
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    color: #fff;
+    font-weight: bold;
+
+    font-family: "inter";
+
+}
+
+.diagnostic p {
+    width: 18rem;
+
+    font-size: clamp(.8rem, 3vw, 3rem);
+    font-family: Inter;
+    font-weight: bold;
+
+    color: #28DF99;
+}
+
+
+.button {
+    margin-top: 5rem;
+}
+
+.button a.button-come-back {
+    height: 4rem;
+    width: 23rem;
+
+    background: #1DCB88;
+    border-radius: 3px;
+
+    font-family: Inter;
+    font-weight: bold;
+    font-size: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    text-decoration: none;
+
+    color: #FFFFFF;
+
+    transition: background .2s;
+}
+
+
+.button a.button-come-back:hover {
+
+
+    background: #14a56d;
+}
+
+@media(min-width:550px) {
+    .symptoms label {
+        width: 30rem;
+    }    
+    
+    .checkbox-container label ~ label {
+        margin-left: 1rem;
+    }
+
+    .checkbox-container label {
+        font-size: 1.4rem;
+    }
+
+    .checkbox-container input[type="radio"] + label::before {
+        width: 1.4rem;
+        height: .8rem;
+        padding-left: .2rem;
+        padding-bottom: 0.8rem;
+        margin-right: .5em;
+
+        font-size: 1.3rem;
+    }
+
+
+}
