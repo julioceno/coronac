@@ -9,7 +9,6 @@ nunjucks.configure('src/views', {
     noCache: true
 })
 
-
 // Configurando rotas
 const routes = require('./routes')
 
