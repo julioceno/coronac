@@ -87,6 +87,11 @@ main {
     color: rgba(77, 213, 153, 0.5);
 }
 
+.input-block small {
+    margin-top: 3rem;
+}
+
+
 input,
 textarea {
     font-family: 'Inter', sans-serif;
@@ -116,6 +121,12 @@ textarea {
     height: 10rem;
     resize: vertical;
     padding: .5rem;
+
+}
+
+.input-block textarea::placeholder {
+    text-align: center;
+    padding-top: 1.5rem;
 }
 
 .input-block input[type="date"] {

@@ -1,22 +1,24 @@
+const popupContainer = document.querySelector('.pop-ups')
+const testExplanation = document.querySelector('.test-explanation')
+const informationData = document.querySelector('.information-data')
+const fillInAbout = document.querySelector('.fill-in-about')
+
 setTimeout( () => {
 
-    document.querySelector('.pop-ups').style.display ="flex"
-    document.querySelector('.test-explanation').style.display ="flex"
+    popupContainer.style.display ="flex"
+    testExplanation.style.display ="flex"
 },2000)
 
-function alerta() {
-    document.querySelector('.pop-ups').style.display ="flex"
-    document.querySelector('.information-data').style.display ="flex"
-    
+function informationDataFunction() {
+    popupContainer.style.display ="flex"
+    informationData.style.display ="flex"
 }
 
 
 function hidePopup() {
-    document.querySelector('.pop-ups').style.display ="none"
-    document.querySelector('.test-explanation').style.display ="none"
-    document.querySelector('.fill-in-about').style.display ="none"
-
-
+    popupContainer.style.display ="none"
+    testExplanation.style.display ="none"
+    fillInAbout.style.display ="none"
 }
 
 
@@ -27,16 +29,14 @@ function validate(event) {
 
     if (permission.checked && !about.value) {
         event.preventDefault()
-        document.querySelector('.pop-ups').style.display ="flex"
-        document.querySelector('.fill-in-about').style.display ="flex"
- 
+        popupContainer.style.display ="flex"
+        fillInAbout.style.display ="flex"
+        informationData.style.display ="none"
         window.location.href= "#header"
-
     }
 }
 
 const comeBackAbout = document.getElementById('come-back-about')
-
 
 comeBackAbout.addEventListener('click', (event) => {
     document.getElementById('click-about').click()
