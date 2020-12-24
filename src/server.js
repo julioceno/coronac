@@ -1,11 +1,30 @@
 const express = require('express')
 const app = express()
+const methodOverride = require('method-override')
 
+// Configurando template engine
+const nunjucks = require('nunjucks')
+nunjucks.configure('src/views', {
+    express: app,
+    noCache: true
+})
+
+
+// Configurando rotas
+const routes = require('./routes')
 
 app 
 
-.get('/', (req, resp) => {
-    return resp.send('<h1> Coronac </h1> <p> Ola Visitante, se voce está vendo isso nesse momento é porque o servidor ainda não configurado. Mas não se desanime, já estou ajustando esse erro </p>') 
-})
+.use(express.urlencoded({ extended: true }))
+.use(express.static('public'))
+
+
+.get('/', routes.index)
+.get('/cases-covid', routes.casesCovid)
+.get('/take-care', routes.takeCare)
+.get('/test-covid', routes.testCovid)
+.get('/diagnostic', routes.diagnostic )
+.get('/feed', routes.feed)
+.get('/test-done', routes.testDone)
 
 .listen(process.env.PORT || 3000, console.log('ola'))
