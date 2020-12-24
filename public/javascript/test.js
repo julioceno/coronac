@@ -1,6 +1,6 @@
+// Validar a exclusão do teste
 const txtDelete = document.getElementById('txt-delete')
 const buttonDelete = document.getElementById('button-confirm-delete')
-
 
 function deleteTest(event) {
     event.preventDefault() // Desabilitando envio de formulário 
@@ -20,22 +20,23 @@ function deleteTest(event) {
     })
 }
 
+// Esconde o popup 
 function hidePopup() {
     document.querySelector('.pop-ups').style.display = "none"
     document.querySelector('.confirm-delete-test').style.display = "none"
 }
-   
 
-// const buttonView = document.querySelector('.view-symptoms').click()
-
+// Adicionando o dinamismo no botão view simptoms 
+const symptoms = document.getElementById('symptoms')
+const buttonView = document.querySelector('.view-symptoms')
+const line = document.getElementById('line-symptoms')
 function viewSymptoms() {
-    const symptoms = document.getElementById('symptoms')
-    const buttonView = document.querySelector('.view-symptoms')
-    const line = document.getElementById('line-symptoms')
+
 
     if (symptoms.style.display == "block") {
         symptoms.style.display = "none"
         buttonView.style.marginBottom = "20rem"
+        buttonView.value = "Visualizar os sintomas"
 
         line.style.display = "none"
 
@@ -56,6 +57,7 @@ function viewSymptoms() {
         
         symptoms.style.display = "block"
         buttonView.style.marginBottom = "clamp(2rem, 9vw, 7rem)"
+        buttonView.value = "Ocultar os sintomas"
         line.style.display = "block"
 
         
@@ -63,3 +65,39 @@ function viewSymptoms() {
         buttonView.style.border = " 2px solid #28DF99"
     }
 }
+
+// esconder o botão view simptoms se a tela for maior que 1100px e apresentar a div simptoms
+function resizeWindow() {
+    let windowWidth = window.innerWidth
+
+    if (windowWidth > 1100) {
+       
+        buttonView.style.display="none"
+        symptoms.style.display="block"
+        document.getElementById('line-symptoms').style.display = "block"
+        
+    } else {
+        buttonView.style.display="block"
+        buttonView.style.marginBottom = "20rem"
+        line.style.display = "none"
+
+        symptoms.style.display="none"
+    }
+}
+
+window.addEventListener('resize', () => {
+    resizeWindow()
+})
+
+// Clicar en todos os inputs radios marcados
+const ids =(document.getElementById('ids').value).split(',')
+
+ids.forEach( (e) => {
+    document.getElementById(`${e.trim()}`).click()
+})
+
+// Desabilitar todos os inputs radios após ser efeturado o click automático
+const allIds = document.querySelectorAll(".checkbox-container input") 
+allIds.forEach( e => {
+    document.getElementById(`${e.id}`).disabled = true;
+})
