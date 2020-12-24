@@ -15,9 +15,9 @@ async function getDataCovid() {
         console.log(data)
 
         place.innerHTML = data.state
-        confirmeds.innerHTML = data.cases 
-        deaths.innerHTML = data.deaths
-        cureds.innerHTML = "1418491234"
+        confirmeds.innerHTML =  data.suspects
+        deaths.innerHTML = data.cases
+        cureds.innerHTML = data.deaths
 
     } catch(e) {
         console.log(e)
