@@ -8,8 +8,9 @@
     <link rel="icon" href="public/images/connected-world.png" />
 
     <link rel="stylesheet" href="public/css/main.css" />
-    <link rel="stylesheet" href="public/css/animation.css" />
     <link rel="stylesheet" href="public/css/header-footer-menu.css" />
+    <link rel="stylesheet" href="public/css/animation.css" />
+    <link rel="stylesheet" href="public/css/pop-ups.css" />
     <link rel="stylesheet" href="public/css/page-test.css" />
 
     <!-- fonts -->
@@ -73,7 +74,7 @@
        
         <main>
 
-          <div class="test-container">
+          <div class="test-container animate-appear">
 
               <header>
                 <div class="informations">
@@ -89,17 +90,17 @@
 
                 </div>
 
-                <form class="delete-test">
-                    <input type="submit" value="" onclick="as()">
+                <form class="delete-test" onsubmit="deleteTest(event)">
+                    <input type="submit" value="">
                 </form>
 
               </header>
               <hr class="line">
 
 
-              <input type="button" class="view-symptoms" value="Visualizar os sintomas"  onclick="a()">
+              <input type="button" class="view-symptoms" value="Visualizar os sintomas"  onclick="viewSymptoms()" style:hover="red">
 
-              <div class="symptoms">
+              <div class="symptoms animate-up " id="symptoms">
 
                   <div class="grid">
                   <div class="input-block">
@@ -235,8 +236,7 @@
                   </div>
                   </div>
 
-
-                  <hr class="line">
+                  <hr class="line animate-up " id="line-symptoms">
 
               <div class="diagnostic">
 
@@ -244,8 +244,8 @@
                       <span>3/10</span>
                       
                   </div>
-                  <p>A Carla marcou sim para 3 dos sintomas, recomendamos a ela a fazer uma mini quarentena em casa.</p>
-              </div> 
+                     <p>A Carla marcou sim para 3 dos sintomas, recomendamos a ela a fazer uma mini quarentena em casa.</p>
+                  </div> 
 
 
               <div class="button">
@@ -279,6 +279,22 @@
           /></a>
         </nav>
       </footer>
+
+      <div class="pop-ups">
+
+        <div class="confirm-delete-test animate-appear ">
+          <input type="button" value="" onclick="hidePopup()" id="minimize-popup">
+          
+          <div class="main">
+            
+            <p>Tem certeza que deseja excluir esse teste? Digite <span>Sim</span> para confirmar</p>
+            
+            <input type="text" id="txt-delete"> 
+            <input type="button" value="Confirmar" id="button-confirm-delete" >
+          </div>
+        
+        </div>
+   </div>
     </div>
   </body>
   <script src="public/javascript/header.js"></script>

@@ -114,7 +114,7 @@
 .search input[type="button"] {
     width: 4.5rem;
     
-    background-image: url(../images/delete.svg);
+    background-image: url(../images/delete-field-text.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 60%;

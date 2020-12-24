@@ -1,0 +1,25 @@
+{
+  "name": "coronac",
+  "version": "1.0.0",
+  "description": "acess: https://julioceno.github.io/coronac/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julioceno/coronac.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/julioceno/coronac/issues"
+  },
+  "homepage": "https://github.com/julioceno/coronac#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6",
+    "sqlite-async": "^1.1.1"
+  }
+}

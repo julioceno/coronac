@@ -14,6 +14,8 @@
     display: none;
 }
 
+/* test explanation  */
+
 .test-explanation {
     width: 30rem;
     height: 28rem;
@@ -69,7 +71,7 @@
 }
 
 
-
+/* information-data */
 
 
 .information-data {
@@ -119,7 +121,7 @@
 }
 
 
-/* aaaaaaaaa */
+/* Fill in about */
 
 
 .fill-in-about  {
@@ -165,5 +167,89 @@
 }
 
 .fill-in-about input:hover {
+    background-color: #11b979;
+}
+
+
+/* confirm delete test  */
+
+.confirm-delete-test  {
+    width: 30rem;
+    height: 30rem;
+
+    background-color: #fff;
+    border: 2px solid gray;
+    border-radius: 1rem;
+
+    
+
+    font-family: 'Inter', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bolder;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+
+    display: none;
+}
+
+.confirm-delete-test  #minimize-popup {
+    
+    background-image: url(../images/minimize-popup.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-color: #fff;
+
+    align-self: flex-end;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 2rem;
+}
+
+.confirm-delete-test p {
+    text-align: center;
+    padding: 0 2.3rem;
+}
+.confirm-delete-test p span {
+    color: #35CB91;
+}
+
+
+.confirm-delete-test input[type="text"] {
+    margin-top: 2rem;
+    border: none;
+    border: 1px solid rgba(0, 0, 0, 1);
+    border-radius: .40rem;
+    height: 3rem;
+    width: 16rem;
+    font-size: 1.8rem;
+    text-align: center;
+
+    outline: none;
+}
+
+.confirm-delete-test input[type="button"] {
+    border: none;
+    margin-top: 1rem;
+    background-color: #35CB91;
+    border-radius: .20rem;
+    height: 3.5rem;
+    width: 13rem;
+    color: #fff;
+    font-size: 2rem;
+    
+    outline: none;
+}
+
+.confirm-delete-test input[type="button"]:hover {
     background-color: #11b979;
 }

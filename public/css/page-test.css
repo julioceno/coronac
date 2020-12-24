@@ -131,7 +131,8 @@ main {
 }
 
 .view-symptoms {
-    margin: clamp(2rem, 3vw, 5rem) 0 clamp(2rem, 9vw, 7rem);
+    margin: clamp(2rem, 3vw, 5rem) 0 20rem;
+
 
     border: none;
     background-color: initial;
@@ -142,8 +143,6 @@ main {
     
     border: 2px solid #000000;
     border-radius: .8rem;
-
-    
 
     font-size: 1.56rem;
     font-family: Inter;
@@ -160,13 +159,10 @@ main {
 }
 
 
-.view-symptoms:focus {
-    border: 2px solid #28DF99;
-    color: #28DF99 ;
-}
-
 .symptoms {
     margin-bottom: 3rem;
+
+    display: none;
 }
 
 .input-block {
@@ -252,6 +248,11 @@ input[type="radio"]:checked + label::before {
     background-color: #4DD599;
     border-color: #4DD599;
     color: #fff;
+}
+
+#line-symptoms {
+    display: none;
+    margin-top: 2rem;
 }
 
 .diagnostic {
