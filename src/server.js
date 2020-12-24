@@ -27,4 +27,5 @@ app
 .get('/feed', routes.feed)
 .get('/test-done', routes.testDone)
 
-.listen(process.env.PORT || 3000, console.log('ola'))
+
+.listen(process.env.PORT || 3000)
