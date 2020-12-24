@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 const methodOverride = require('method-override')
+const cors = require('cors')
 
 // Configurando template engine
 const nunjucks = require('nunjucks')
@@ -16,6 +17,8 @@ app
 
 .use(express.urlencoded({ extended: true }))
 .use(express.static('public'))
+.use(express.static('public'))
+.use(cors())
 
 
 .get('/', routes.index)
@@ -26,5 +29,6 @@ app
 .get('/feed', routes.feed)
 .get('/test-done', routes.testDone)
 
+.post('/search', routes.search)
 
 .listen(process.env.PORT || 3000)

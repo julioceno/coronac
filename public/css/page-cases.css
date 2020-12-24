@@ -70,9 +70,8 @@
 }
 
 
-.search input[type="submit"],
-.search input[type="text"],
-.search input[type="button"] {
+
+.search input{
     height: 100%;
     border: none;
     text-decoration: none;
@@ -82,7 +81,7 @@
     background-color: rgba(255, 255, 255, 0.7);
 }
 
-.search input[type="submit"] {
+.search .button-search {
     width: 4rem;
     border-right:  2px solid #7A7A7A;
 
@@ -93,7 +92,7 @@
 
 }
 
-.search input[type="submit"]:hover {
+.search .button-search:hover {
     background-color: #7a7a7a50;
 
     background-image: url(../images/search.svg);
@@ -111,7 +110,7 @@
 }
 
 
-.search input[type="button"] {
+.search .button-delete-field {
     width: 4.5rem;
     
     background-image: url(../images/delete-field-text.svg);

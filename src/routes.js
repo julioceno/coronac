@@ -1,5 +1,8 @@
 module.exports = {
 
+
+    // GET
+
     index(req, resp) {
         return resp.render('index.html')
     },
@@ -26,5 +29,19 @@ module.exports = {
 
     testDone(req, resp) {
         return resp.render('test-done.html')
-    }
+    },
+
+    // POST 
+  
+    search(req, resp) {
+
+
+        try {
+
+            resp.redirect('/feed')
+        } catch(e) {
+            console.log(e)           
+        }
+
+    },  
 }

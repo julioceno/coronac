@@ -85,8 +85,8 @@
     
 }
 
-.buttons .button-previnition {
-    font-size: 1.4rem;
+.buttons .button-test {
+    font-size: 1.9rem;
     background-color: #65CBA5;
 }
 
@@ -140,9 +140,9 @@
         font-size: clamp(2rem, 2vw, 2.3rem);
     }
     
-    .buttons .button-previnition {
+    .buttons .button-test {
         width: clamp(15rem, 16vw, 18rem);
-        font-size: clamp(1.3rem, 1.5rem , 1.8rem);
+        font-size: clamp(2rem, 2vw, 2.3rem);
     }
     
 
