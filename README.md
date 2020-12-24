@@ -1,3 +1,3 @@
 # coronac
 
-acess: https://julioceno.github.io/coronac/
+acess: https://coronac-app.herokuapp.com/
