@@ -1,4 +1,4 @@
 function clean() {
-    document.getElementById('input-place').value = ""
-    document.getElementById('input-place').focus()
+    document.getElementById('input-search').value = ""
+    document.getElementById('input-search').focus()
 } 
