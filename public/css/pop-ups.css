@@ -14,6 +14,65 @@
     display: none;
 }
 
+
+
+span {
+    color: #35CB91;
+}
+
+
+
+/* place not found */
+
+
+.place-not-found {
+    width: 28rem;
+    height: 28rem;
+
+
+    background-color: #fff;
+    border: 2px solid gray;
+    border-radius: 1rem;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+    font-weight: bolder;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    display: none;
+}
+
+.place-not-found p {
+    width: 24rem;
+    text-align: center;
+}
+
+
+.place-not-found input {
+    border: none;
+    background-color: initial;
+    margin-top: 3rem;
+    background-color: #35CB91;
+    border-radius: .20rem;
+
+    height: 4rem;
+    width: 14rem;
+    
+    color: #fff;
+    font-size: 2.2rem;
+    
+    outline: none;
+}
+
+.place-not-found input:hover {
+    background-color: #11b979;
+}
+
+
 /* test explanation  */
 
 .test-explanation {
@@ -45,7 +104,6 @@
 }
 
 .test-explanation p span {
-    color: #35CB91;
     font-size: 3rem;
 }
 
@@ -148,9 +206,6 @@
     text-align: center;
     padding: 0 2.3rem;
 }
-.fill-in-about p span {
-    color: #35CB91;
-}
 
 .fill-in-about input {
     border: none;
@@ -219,10 +274,6 @@
     text-align: center;
     padding: 0 5rem;
 }
-.confirm-delete-test p span {
-    color: #35CB91;
-}
-
 
 .confirm-delete-test input[type="text"] {
     margin-top: 2rem;

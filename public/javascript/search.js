@@ -175,11 +175,18 @@ const deaths = document.getElementById('deaths')
 
 async function getDataCovid() {
     try {
+
+        place.innerHTML = "Carregando..."
+        suspects.innerHTML = "Carregando..."
+        cases.innerHTML = "Carregando..."
+        deaths.innerHTML = "Carregando..."
+      
+
         let img;
         let uf;
         
         placeData.forEach(e => {
-            if((e.name).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g , '')  == (placeSearch.value).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g , '') ) {
+            if((e.name).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g , '')  == (placeSearch.value).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g , '') || (e.uf).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g , '')  == (placeSearch.value).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g , '')) {
                 img = e.flag
                 uf = e.uf
             }
@@ -191,15 +198,31 @@ async function getDataCovid() {
         console.log(data)
 
 
-        flag.src = img
-        place.innerHTML = data.state
-        suspects.innerHTML = data.suspects
-        cases.innerHTML = data.cases
-        deaths.innerHTML = data.deaths
 
+      
+
+        flag.src = img
+        place.innerHTML = data.state 
+        suspects.innerHTML = data.suspects  
+        cases.innerHTML = data.cases 
+        deaths.innerHTML = data.deaths 
+
+        if (!data.state) {
+            document.querySelector('.pop-ups').style.display = "flex"
+            document.querySelector('.place-not-found ').style.display = "flex"
+
+            place.innerHTML = ""
+            suspects.innerHTML =  "" 
+            cases.innerHTML = ""
+            deaths.innerHTML = ""
+        }
+        
 
     } catch(e) {
         console.log(e)
+
+        
+       
     }
 
 

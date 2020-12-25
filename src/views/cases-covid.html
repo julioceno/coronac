@@ -8,8 +8,9 @@
     <link rel="icon" href="/images/connected-world.png">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/animation.css">
     <link rel="stylesheet" href="/css/header-footer-menu.css">
+    <link rel="stylesheet" href="/css/animation.css"> 
+    <link rel="stylesheet" href="/css/pop-ups.css">
     <link rel="stylesheet" href="/css/page-cases.css">
 
     <!-- fonts -->
@@ -78,23 +79,23 @@
                 <small class="board">Lugar</small>
 
             <img src="" id="flag" alt="">
-                <p id="place">Brasil</p> 
+                <p id="place"></p> 
             </div>
 
         
             <div class="Suspects">
                 <small class="board">Suspeitos</small>
-                <p id="suspects">6.728.452</p>
+                <p id="suspects"></p>
             </div>
             
             <div class="cases">
                <small class="board">Casos</small>
-                 <p id="cases">178.995</p>
+                 <p id="cases"></p>
             </div>
 
             <div class="deaths">
               <small class="board">Mortes</small>
-                  <p id="deaths">5.966.118</p>
+                  <p id="deaths"></p>
 
             </div>
         </div>
@@ -118,10 +119,19 @@
        </nav>
     </footer>
 
+    
+    <div class="pop-ups">
+
+        <div class="place-not-found animate-appear">
+            <p>Lugar não encontrado... Procure apenas <span>estados brasileiros ou paises em geral</span> se o erro persistir tente mais tarde.</p>
+        
+            <input type="button" value="Ok" onclick="hidePopup()">
+        </div>
+   </div>
 
 </div>
 </body>
 <script src="/javascript/header.js"></script>
-<script src="/javascript/page-cases.js"></script>
 <script src="/javascript/search.js"></script>
+<script src="/javascript/page-cases.js"></script>
 </html>
