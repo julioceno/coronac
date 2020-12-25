@@ -188,6 +188,8 @@ let format = new Intl.NumberFormat('pt-BR', {
 })
 
 async function getDataCovid() {
+    const placeSearchValue = (placeSearch.value).trim().replace(/( )+/g, ' ')
+
     try {
 
         flag.src = "../images/search.svg"
@@ -197,7 +199,7 @@ async function getDataCovid() {
         deaths.innerHTML = "Carregando..."
       
 
-        if ((placeSearch.value).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g , '') === 'brasil') {
+        if (placeSearchValue.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g , '') === 'brasil') {
             getDataBrazil()
             
         } else {
@@ -207,7 +209,7 @@ async function getDataCovid() {
             let uf;
 
             placeData.forEach(e => {
-                if((e.name).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g , '')  == (placeSearch.value).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g , '') || (e.uf).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g , '')  == (placeSearch.value).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g , '')) {
+                if((e.name).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g , '')  === placeSearchValue.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g , '') || (e.uf).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g , '')  == (placeSearch.value).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g , '')) {
                     img = e.flag
                     uf = e.uf
                 }
