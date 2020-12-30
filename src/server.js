@@ -29,6 +29,6 @@ app
 .get('/feed', routes.feed)
 .get('/test-done', routes.testDone)
 
-.post('/search', routes.search)
+.post('/save-test', routes.saveTest)
 
 .listen(process.env.PORT || 3000)

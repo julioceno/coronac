@@ -59,45 +59,44 @@
 
             <main>
 
-            <form action="" class="form animate-appear" onsubmit="validate(event)">
+            <form action="/save-test" method="POST" class="form animate-appear" onsubmit="validate(event)">
                 <fieldset class="data">
                     <legend >Dados</legend>
 
                     <div class="grid">
                     <div class="input-block">
                         <label for="">Nome</label> 
-                        <input type="text">
+                        <input type="text" name="name" >
                     </div>
 
                     <div class="input-block">
                         <label for="about" id="click-about">Sobre</label>
-                        <textarea  id="about" name="" placeholder="Só marque este campo se você for deixar o seu test em nosso feed"></textarea>
+                        <textarea  id="about" name="about"  placeholder="Só marque este campo se você for deixar o seu test em nosso feed"></textarea>
                     </div>
 
                     <div class="input-block">
                         <label for="">Data de nascimento</label>
-                        <input type="date">
+                        <input type="date" name="date" >
                     </div>
                     
-
                     <div class="input-block">
                         <label for="">Email</label>
-                        <input type="email">
+                        <input type="email" name="email">
                     </div>
                     
 
                     <div class="input-block">
                         <label for="">Whatsapp</label>
-                        <input type="number">
+                        <input type="number" name="whatsapp">
                     </div>
 
                     <div class="input-block">
                         <label class="label-checkbox" for="">Sexo</label>
 
                         <div class="checkbox-container">
-                            <input type="radio" name="sex" id="sex1"  value="male" >
+                            <input type="radio" name="sex" id="sex1"  value="Masculino" >
                             <label for="sex1">Masculino</label>
-                            <input type="radio" name="sex" id="sex2" value="female" checked> 
+                            <input type="radio" name="sex" id="sex2" value="Feminino" checked> 
                             <label for="sex2">Feminino</label>
                         </div>
 
@@ -113,9 +112,9 @@
                         <label class="label-checkbox" for="">Você teve dor de cabeça recentimente?</label>
 
                         <div class="checkbox-container">
-                            <input type="radio" name="headache" id="headache1"  value="Masculino" >
+                            <input type="radio" name="headache" id="headache1"  value="headache1" >
                             <label for="headache1">Sim</label>
-                            <input type="radio" name="headache" id="headache2" value="Feminino" checked>
+                            <input type="radio" name="headache" id="headache2" value="no" checked>
                             <label for="headache2">Não</label>
                         </div>
 
@@ -126,10 +125,10 @@
                         <label class="label-checkbox" for="">Você teve febre recentimente?</label>
 
                         <div class="checkbox-container">
-                            <input type="radio" name="fever" id="fever1"  value="Masculino" >
+                            <input type="radio" name="fever" id="fever1"  value="fever1" >
                             <label for="fever1">Sim
                             </label>
-                            <input type="radio" name="fever" id="fever2" value="Feminino" checked>
+                            <input type="radio" name="fever" id="fever2" value="no" checked>
                             <label for="fever2">Não</label>
                         </div>
 
@@ -139,10 +138,10 @@
                         <label class="label-checkbox" for="">Você teve diarreia recentimente?</label>
 
                         <div class="checkbox-container">
-                            <input type="radio" name="diarrhea" id="diarrhea1"  value="Masculino" >
+                            <input type="radio" name="diarrhea" id="diarrhea1"  value="diarrhea1" >
                             <label for="diarrhea1">Sim
                             </label>
-                            <input type="radio" name="diarrhea" id="diarrhea2" value="Feminino" checked>
+                            <input type="radio" name="diarrhea" id="diarrhea2" value="no" checked>
                             <label for="diarrhea2">Não</label>
                         </div>
 
@@ -152,10 +151,10 @@
                         <label class="label-checkbox" for="">Você teve tosse seca recentimente?</label>
 
                         <div class="checkbox-container">
-                            <input type="radio" name="dry-cough" id="dry-cough1"  value="Masculino" >
+                            <input type="radio" name="dryCough" id="dry-cough1"  value="dry-cough1" >
                             <label for="dry-cough1">Sim
                             </label>
-                            <input type="radio" name="dry-cough" id="dry-cough2" value="Feminino" checked>
+                            <input type="radio" name="dryCough" id="dry-cough2" value="no" checked>
                             <label for="dry-cough2">Não</label>
                         </div>
 
@@ -165,10 +164,10 @@
                         <label class="label-checkbox" for="">Você teve problemas respiratórios recentimente?</label>
 
                         <div class="checkbox-container">
-                            <input type="radio" name="breath" id="breath1"  value="Masculino" >
+                            <input type="radio" name="breath" id="breath1"  value="breath1" >
                             <label for="breath1">Sim
                             </label>
-                            <input type="radio" name="breath" id="breath2" value="Feminino" checked>
+                            <input type="radio" name="breath" id="breath2" value="no" checked>
                             <label for="breath2">Não</label>
                         </div>
 
@@ -178,10 +177,10 @@
                         <label class="label-checkbox" for="">Você teve perda de paladar ou ofato recentimente?</label>
 
                         <div class="checkbox-container">
-                            <input type="radio" name="taste-and-smell" id="taste-and-smell1"  value="Masculino" >
+                            <input type="radio" name="tasteAndSmell" id="taste-and-smell1"  value="taste-and-smell1" >
                             <label for="taste-and-smell1">Sim
                             </label>
-                            <input type="radio" name="taste-and-smell" id="taste-and-smell2" value="Feminino" checked>
+                            <input type="radio" name="tasteAndSmell" id="taste-and-smell2" value="no" checked>
                             <label for="taste-and-smell2">Não</label>
                         </div>
 
@@ -191,10 +190,10 @@
                         <label class="label-checkbox" for="">Você teve conjutivite recentimente?</label>
 
                         <div class="checkbox-container">
-                            <input type="radio" name="conjunctivitis" id="conjunctivitis1"  value="Masculino" >
+                            <input type="radio" name="conjunctivitis" id="conjunctivitis1"  value="conjunctivitis1" >
                             <label for="conjunctivitis1">Sim
                             </label>
-                            <input type="radio" name="conjunctivitis" id="conjunctivitis2" value="Feminino" checked>
+                            <input type="radio" name="conjunctivitis" id="conjunctivitis2" value="no" checked>
                             <label for="conjunctivitis2">Não</label>
                         </div>
 
@@ -204,10 +203,10 @@
                         <label class="label-checkbox" for="">Você teve dor de garganta recentimente?</label>
 
                         <div class="checkbox-container">
-                            <input type="radio" name="sore-throat" id="sore-throat1"  value="Masculino" >
+                            <input type="radio" name="soreThroat" id="sore-throat1"  value="sore-throat1" >
                             <label for="sore-throat1">Sim
                             </label>
-                            <input type="radio" name="sore-throat" id="sore-throat2" value="Feminino" checked>
+                            <input type="radio" name="soreThroat" id="sore-throat2" value="no" checked>
                             <label for="sore-throat2">Não</label>
                         </div>
 
@@ -217,10 +216,10 @@
                         <label class="label-checkbox" for="">Você teve dores ou desconforto recentimente?</label>
 
                         <div class="checkbox-container">
-                            <input type="radio" name="pain-or-discomfort" id="pain-or-discomfort1"  value="Masculino" >
+                            <input type="radio" name="painOrDiscomfort" id="pain-or-discomfort1"  value="pain-or-discomfort1" >
                             <label for="pain-or-discomfort1">Sim
                             </label>
-                            <input type="radio" name="pain-or-discomfort" id="pain-or-discomfort2" value="Feminino" checked>
+                            <input type="radio" name="painOrDiscomfort" id="pain-or-discomfort2" value="no" checked>
                             <label for="pain-or-discomfort2">Não</label>
                         </div>
 
@@ -230,10 +229,10 @@
                         <label class="label-checkbox" for="">Você  se sente cansado com facilidade?</label>
 
                         <div class="checkbox-container">
-                            <input type="radio" name="tiredness" id="tiredness1"  value="Masculino">
+                            <input type="radio" name="tiredness" id="tiredness1"  value="tiredness1">
                             <label for="tiredness1">Sim
                             </label>
-                            <input type="radio" name="tiredness" id="tiredness2" value="Feminino">
+                            <input type="radio" name="tiredness" id="tiredness2" value="no">
                             <label for="tiredness2">Não</label>
                         </div>
 
@@ -253,9 +252,9 @@
                         <div class="centering">
 
                         <div class="checkbox-container">
-                            <input type="radio" name="feed" id="feed1"  value="Masculino" >
+                            <input type="radio" name="feed" id="feed1"  value="yes" >
                             <label for="feed1">Sim</label>
-                            <input type="radio" name="feed" id="feed2" value="Feminino" checked>
+                            <input type="radio" name="feed" id="feed2" value="no" checked>
                             <label for="feed2">Não</label>
                         </div>
 
@@ -290,7 +289,7 @@
        </nav>
     </footer>
 
-
+<!-- 
     <div class="pop-ups">
 
         <div class="test-explanation animate-appear ">
@@ -311,7 +310,7 @@
             <input type="button" id="come-back-about" value="Ok" onclick="hidePopup()">
         </div>
    </div>
-   
+    -->
 </div>
 </body>
 <script src="/javascript/header.js"></script>
