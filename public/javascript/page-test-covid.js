@@ -7,7 +7,7 @@ setTimeout( () => {
 
     popupContainer.style.display ="flex"
     testExplanation.style.display ="flex"
-},2000)
+},1200)
 
 function informationDataFunction() {
     popupContainer.style.display ="flex"

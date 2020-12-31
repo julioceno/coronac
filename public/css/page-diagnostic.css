@@ -49,7 +49,7 @@ main {
     height: clamp(5rem, 13vw, 8rem);
 
     margin-right: clamp(1.3rem, 4vw, 2rem);
-    margin-bottom: clamp(6rem, 12vw, 9rem);
+    margin-bottom: clamp(3rem, 8vw, 9rem);
 }
 
 .diagnostic-container .data-user {

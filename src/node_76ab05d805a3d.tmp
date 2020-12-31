@@ -1,0 +1,136 @@
+const databaseinteractions = require('./database/database-interactions')
+
+module.exports = {
+    // GET
+
+    index(req, resp) {
+        return resp.render('index.html')
+    },
+
+    casesCovid(req, resp) {
+        return resp.render('cases-covid.html')
+    },
+    
+    takeCare(req, resp) {
+        return resp.render('take-care.html')
+    },
+
+     testCovid(req, resp) {
+      
+        return resp.render('test-covid.html')
+    },
+
+    async diagnostic(req, resp) {
+        const id = req.params.id
+        try {
+            const dataTest = await databaseinteractions.getData(`SELECT * FROM test where id = ${id}`)
+            const result = dataTest[0]
+
+            // Aqui eu faço a contagem de sim que ele marcou
+            let amountSymptoms = 0
+            const symptoms = (result.symptoms).split(',')
+            
+            symptoms.forEach((e) => {
+
+                if (e.trim() !== 'no')
+                amountSymptoms += 1
+            })
+
+
+            // Dependendo de quantas caixinhas ele marcou ele vai receber uma mensagem lá no formulário.
+            result.amountSymptoms = amountSymptoms
+            if (amountSymptoms <= 4 ) {
+                result.diagnosticText = "faça uma mini quarentena em casa e se os sintomas continuarem a aparecer volte aqui novamente!"
+                result.diagnosticColor = style="background-color:#28DF99"
+            } else if (amountSymptoms <= 7){
+                result.diagnosticText = "recomendamos que vá ao médico o mais rápido possível!"
+                result.diagnosticColor = style="background-color:#fddb3a"
+            } else {
+                result.diagnosticText = "é 100% necessário que você vá a um médico!"
+                result.diagnosticColor = style="background-color:#FF748E"
+
+            }
+
+
+            return resp.render('diagnostic.html', result)
+        } catch(err) {
+            console.log(err)
+        }
+
+    },
+
+    feed(req, resp) {
+        return resp.render('feed.html')
+    },
+
+    testDone(req, resp) {
+        return resp.render('test-done.html')
+    },
+
+    // POST 
+  
+    async saveTest(req, resp) {
+        const field = req.body
+        try {
+            let symptoms = `${field.headache}, ${field.fever}, ${field.diarrhea}, ${field.dryCough}, ${field.breath}, ${field.tasteAndSmell}, ${field.conjunctivitis}, ${field.soreThroat}, ${field.painOrDiscomfort}, ${field.tiredness}`
+
+            let formattedDate;
+
+
+            function validateAge(data) {
+                const date = new Date;
+
+                day = 
+                month
+                year
+
+                const currentYear = date.getFullYear()
+                const currentMonth = date.getMonth() + 1
+                const currentDay = date.getDate()
+
+                let currentYearOld = currentYear - year
+
+                if (currentMonth < month || currentMonth === month && currentDay < day) currentYearOld --
+
+                return currentYearOld
+            }
+
+            validateAge((field.date))
+            console.log((field.date).split())
+
+
+              // Salvando na tabela de feed
+            //   if (field.feed === "yes") {
+            //     databaseinteractions.registerDatabaseFeed({
+            //         name: field.name,
+            //         about: field.about,
+            //         date: field.date,
+            //         email: field.email,
+            //         whatsapp: field.whatsapp,
+            //         sex: field.sex,
+            //         symptoms: symptoms
+            //     })
+            //   }
+              
+            //   databaseinteractions.registerDatabase({
+            //       name: field.name,
+            //       date: field.date,
+            //       email: field.email,
+            //       whatsapp: field.whatsapp,
+            //       sex: field.sex,
+            //       symptoms: symptoms
+            // })
+            
+
+            // const getId = await databaseinteractions.getData(`SELECT * FROM test WHERE id=(SELECT last_insert_id());`)
+            // const id = getId[0].id
+
+        //    return resp.redirect(`/diagnostic/${id}`)
+           return resp.redirect(`/test-covid`)
+        } catch(err) {
+            console.log(err)           
+        }
+
+    },  
+
+}

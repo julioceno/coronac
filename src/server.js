@@ -25,9 +25,9 @@ app
 .get('/cases-covid', routes.casesCovid)
 .get('/take-care', routes.takeCare)
 .get('/test-covid', routes.testCovid)
-.get('/diagnostic', routes.diagnostic )
+.get('/diagnostic/:id', routes.diagnostic )
 .get('/feed', routes.feed)
-.get('/test-done', routes.testDone)
+.get('/test-done/:id', routes.testDone)
 
 .post('/save-test', routes.saveTest)
 

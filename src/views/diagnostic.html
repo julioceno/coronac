@@ -61,15 +61,19 @@
                 <div class="diagnostic-container">
 
                     <header>
-                        <img src=".//images/woman.svg" alt="">
+                        {% if sex === "Feminino" %} 
+                        <img src="/images/woman.png" alt="">
+                        {% else %}
+                        <img src="/images/man.png" alt="">
+                        {% endif %}
+
 
                         <div class="data-user">
-                            <p class="name"> Carla da Silva</p>
-                            <p class="year-old">Idade: 15</p>
-                            <p class="sex ">Sexo: Feminino</p>
-                            <p class="email">Email: carlaaaaaaaaaaaaaa@gmail.com</p>
-                            <p class="whatsapp">Whatsapp:21298439493</p>
-                            <p class="about">Sobre: Meu nome é Carla tenho 15 anos e acho que estou com covid-19</p>
+                            <p class="name">{{name}}</p>
+                            <p class="year-old">Idade: {{date}}</p>
+                            <p class="sex ">Sexo: {{sex}}</p>
+                            <p class="email">Email: {{email}}</p>
+                            <p class="whatsapp">Whatsapp:{{whatsapp}}</p>
                         </div>
                     </header>
 
@@ -80,7 +84,7 @@
 
                         <div class="grid">
 
-                            <input type="hidden" id="ids" value="headache1, fever2, diarrhea1, dry-cough1, breath1, taste-and-smell2, conjunctivitis1, sore-throat2, pain-or-discomfort2, tiredness1">
+                            <input type="hidden" id="ids" value="{{symptoms}}">
 
                         <div class="input-block">
                             <label class="label-checkbox" for="">Você teve dor de cabeça recentimente?</label>
@@ -190,10 +194,10 @@
                             <label class="label-checkbox" for="">Você teve dores ou desconforto recentimente?</label>
 
                             <div class="checkbox-container">
-                                <input type="radio" name="pain-or-discomfort" id="pain-or-discomfort1"  value="Masculino" >
+                                <input type="radio" name="pain-or-discomfort" id="pain-or-discomfort1"   >
                                 <label for="pain-or-discomfort1">Sim
                                 </label>
-                                <input type="radio" name="pain-or-discomfort" id="pain-or-discomfort2" value="Feminino" checked>
+                                <input type="radio" name="pain-or-discomfort" id="pain-or-discomfort2" checked>
                                 <label for="pain-or-discomfort2">Não</label>
                             </div>
 
@@ -203,10 +207,10 @@
                             <label class="label-checkbox" for="">Você  se sente cansado com facilidade?</label>
 
                             <div class="checkbox-container">
-                                <input type="radio" name="tiredness" id="tiredness1"  value="Masculino">
+                                <input type="radio" name="tiredness" id="tiredness1"  >
                                 <label for="tiredness1">Sim
                                 </label>
-                                <input type="radio" name="tiredness" id="tiredness2" value="Feminino">
+                                <input type="radio" name="tiredness" id="tiredness2" >
                                 <label for="tiredness2">Não</label>
                             </div>
 
@@ -217,20 +221,19 @@
 
                     <hr class="line">
 
-                    <div class="diagnostic">
+                    <div class="diagnostic" >
 
-                        <div class="circle">
-                            <span>3/10</span>
+                        <div class="circle" style="{{diagnosticColor}}">
+                            <span>{{amountSymptoms}}/10</span>
                             
                         </div>
-                        <p>Você marcou 3 de 10, faça uma mini quarentena em casa e se os sintomas continuarem a aparecer volte 
-                            aqui novamente!</p>
+                        <p>Você marcou {{amountSymptoms}} de 10, {{diagnosticText}}</p>
                     </div>
 
                     <hr class="line">
 
                     <div class="buttons">
-                        <a class="button-preoceed" href="">Prosseguir</a>
+                        <a class="button-preoceed" href="/feed">Prosseguir</a>
                     </div>
                 </div>
  

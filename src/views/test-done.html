@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coronac | Relátorio</title>
+    <title>Coronac | {{name}}</title>
 
     <link rel="icon" href="/images/connected-world.png" />
 
@@ -77,18 +77,24 @@
               <header>
                 <div class="informations">
 
-                    <img src=".//images/woman.svg" alt="">
+                    {% if sex === "Feminino" %} 
+                    <img src="/images/woman.png" alt="">
+                    {% else %}
+                    <img src="/images/man.png" alt="">
+                    {% endif %}
 
-                    <div class="data-user">
-                        <p class="name"> Carla da Silva</p>
-                        <p class="year-old">Idade: 15</p>
-                        <p class="sex ">Sexo: Feminino</p>
-                        <p class="about">Sobre: Meu nome é Carla tenho 15 anos e acho que estou com covid-19</p>
+
+                       <div class="data-user">
+                        <p class="name">{{name}}</p>
+                        <p class="year-old">Idade: {{ date }}</p>
+                        <p class="sex ">Sexo: {{ sex }}</p>
+                        <p class="about">Sobre: {{ about }}</p>
                     </div>
 
                 </div>
 
-                <form class="delete-test" onsubmit="deleteTest(event)">
+                <form class="delete-test" onsubmit="deleteTest(event)" method="POST">
+                    <input type="hidden" name="id" value="{{id}}">
                     <input type="submit" value="">
                 </form>
 
@@ -100,7 +106,7 @@
               <div class="symptoms animate-up " id="symptoms">
 
                   <div class="grid">
-                    <input type="hidden" id="ids" value="headache1, fever2, diarrhea1, dry-cough1, breath1, taste-and-smell2, conjunctivitis1, sore-throat2, pain-or-discomfort2, tiredness1">
+                    <input type="hidden" id="ids" value="{{symptoms}}">
                   
                     
                     <div class="input-block">
@@ -240,16 +246,16 @@
 
               <div class="diagnostic">
 
-                  <div class="circle">
-                      <span>3/10</span>
+                  <div class="circle" style="{{diagnosticColor}}">
+                      <span>{{amountSymptoms}}/10</span>
                       
                   </div>
-                     <p>A Carla marcou sim para 3 dos sintomas, recomendamos a ela a fazer uma mini quarentena em casa.</p>
+                     <p>{{name}} marcou sim para {{amountSymptoms}} dos sintomas, {{diagnosticText}}</p>
                   </div> 
 
 
               <div class="button">
-                  <a class="button-come-back" href="">Voltar ao feed</a>
+                  <a class="button-come-back" href="/feed">Voltar ao feed</a>
               </div>
           </div>
 

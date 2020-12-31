@@ -1,6 +1,8 @@
 const ids =(document.getElementById('ids').value).split(',')
 
+
 ids.forEach( (e) => {
+    if (!(e.trim() === 'no'))
     document.getElementById(`${e.trim()}`).click()
 })
 

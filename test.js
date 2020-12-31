@@ -1,7 +1,15 @@
-const numbers = [3, 9, 2] 
+function validateAge(day, month, year) {
+    const date = new Date;
 
-const add = (accumulator, currentValue) => accumulator + currentValue 
+    const currentYear = date.getFullYear()
+    const currentMonth = date.getMonth() + 1
+    const currentDay = date.getDate()
 
-let n = numbers.reduce(add)
+    let currentYearOld = currentYear - year
 
-console.log(n)
+    if (currentMonth < month || currentMonth === month && currentDay < day) currentYearOld --
+
+    return currentYearOld
+}
+
+console.log(validateAge(30, 12, 1980))
