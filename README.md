@@ -21,7 +21,6 @@ ___
   
 **In addition there you can do a test on the disease and then you will receive a diagnosis. However the test has no scientific basis so it is not reliable.** 
 
-image test, image diagnostic
 ![page-test](https://github.com/julioceno/coronac/blob/master/images-readme/page-test.png)
 
 ![page-diagnostic](https://github.com/julioceno/coronac/blob/master/images-readme/page-diagnostic.png)
@@ -41,8 +40,6 @@ ___
 
 ![page-take-care](https://github.com/julioceno/coronac/blob/master/images-readme/page-take-care.png)
 
-
-image take care**
 
 #  ![computer](https://github.githubassets.com/images/icons/emoji/unicode/1f4bb.png)   Run on your computer
 * To clone the project ``git clone https://github.com/julioceno/coronac.git``
