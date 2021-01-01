@@ -14,7 +14,7 @@
 
  **Well, in the main part of the website called page cases it provides you with data about covid in Brazil.** 
 
-image cases
+![page-landing](https://github.com/julioceno/coronac/blob/master/images-readme/page-cases.png)
 
 ___
   
