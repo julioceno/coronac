@@ -1,7 +1,8 @@
 # coronac
 
  # ![mag_right](https://github.githubassets.com/images/icons/emoji/unicode/1f50e.png)     This is coronac, a website that provides data on covid-19 from Brazil and from Brazilian states.  
-![bla]([coronac/page-landing.png at master · julioceno/coronac (github.com)](https://github.com/julioceno/coronac/blob/master/images-readme/page-landing.png))
+
+![page-landing](https://github.com/julioceno/coronac/blob/master/images-readme/page-landing.png)
 
 # ![rocket](https://github.githubassets.com/images/icons/emoji/unicode/1f680.png)  Technology
 * HTML
@@ -14,24 +15,34 @@
 
  **Well, in the main part of the website called page cases it provides you with data about covid in Brazil.** 
 
-image cases
+![page-landing](https://github.com/julioceno/coronac/blob/master/images-readme/page-cases.png)
 
 ___
   
 **In addition there you can do a test on the disease and then you will receive a diagnosis. However the test has no scientific basis so it is not reliable.** 
 
 image test, image diagnostic
+![page-test](https://github.com/julioceno/coronac/blob/master/images-readme/page-test.png)
 
+![page-diagnostic](https://github.com/julioceno/coronac/blob/master/images-readme/page-diagnostic.png)
 ___
 **If you leave your test public, others will be able to see it in the feed.**
 
-image feed
-
+![page-feed](https://github.com/julioceno/coronac/blob/master/images-readme/page-feed.png)
 ___
 
 **And this is the test that you leave released in the feed.**
  
- image test feed
+![page-test-done](https://github.com/julioceno/coronac/blob/master/images-readme/page-test-done.png)
+
+___
+
+**Como se tudo isso já não fosse o suficiente tem uma parte de dicas de como se cuidar na pandemia**
+
+![page-take-care](https://github.com/julioceno/coronac/blob/master/images-readme/page-take-care.png)
+
+
+image take care**
 
 #  ![computer](https://github.githubassets.com/images/icons/emoji/unicode/1f4bb.png)   Run on your computer
 * To clone the project ``git clone https://github.com/julioceno/coronac.git``
