@@ -56,6 +56,8 @@ main {
 
     margin-top: 3rem;
     margin-left: 1rem;
+    margin: 3rem 0 2rem 1rem;
+
 }
 
 .test-container header .informations img {
@@ -72,6 +74,10 @@ main {
     font-family: Inter;
     font-weight: bold;
     font-size: clamp(1.8rem, 3.5vw, 2.3rem);
+
+    word-wrap: break-word; 
+    width: auto;
+    max-width: 20rem;
 
     color: #28DF99;
 
@@ -392,8 +398,14 @@ input[type="radio"]:checked + label::before {
 
     .test-container .name {
         font-size: clamp(2rem, 4vw, 3rem);
+        
+        word-wrap: break-word; 
+        width: auto;
+        max-width: 38rem;;
     }
 
+  
+    
     .test-container p + p {
         margin-bottom: .7rem;
     }

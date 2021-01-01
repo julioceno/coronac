@@ -31,7 +31,8 @@ main {
 .diagnostic {
     width: clamp(38rem, 70vw, 45rem);
     height: 15rem;
-    height: clamp(1rem, 30vw, 16.5rem);
+    min-height: clamp(1rem, 30vw, 16.5rem);
+    height: auto;
     background-color: #fff;
 
     border: 1px solid rgba(0, 0, 0, 0.3);
@@ -76,7 +77,6 @@ main {
     word-wrap: break-word; 
     width: auto;
     max-width: 11rem;
-
 
     margin-bottom: .2rem;
 }
@@ -158,6 +158,11 @@ main {
 
     }
     
+
+        
+    .informations .name {
+        max-width: 15rem;
+    }
 
     .about {
         display: block;
