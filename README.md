@@ -22,6 +22,7 @@ ___
 
 image test, image diagnostic
 ![page-test](https://github.com/julioceno/coronac/blob/master/images-readme/page-test.png)
+
 ![page-diagnostic](https://github.com/julioceno/coronac/blob/master/images-readme/page-diagnostic.png)
 ___
 **If you leave your test public, others will be able to see it in the feed.**
@@ -32,6 +33,15 @@ ___
 **And this is the test that you leave released in the feed.**
  
 ![page-test-done](https://github.com/julioceno/coronac/blob/master/images-readme/page-test-done.png)
+
+___
+
+**Como se tudo isso já não fosse o suficiente tem uma parte de dicas de como se cuidar na pandemia**
+
+![page-take-care](https://github.com/julioceno/coronac/blob/master/images-readme/page-take-care.png)
+
+
+image take care**
 
 #  ![computer](https://github.githubassets.com/images/icons/emoji/unicode/1f4bb.png)   Run on your computer
 * To clone the project ``git clone https://github.com/julioceno/coronac.git``
