@@ -73,6 +73,11 @@ main {
     font-size: clamp(2.5rem, 5vw, 3rem);
     color: #28DF99;
 
+    word-wrap: break-word; 
+    width: auto;
+    max-width: 11rem;
+
+
     margin-bottom: .2rem;
 }
 
@@ -150,7 +155,9 @@ main {
 
         width: 100%;
         max-width: 26rem;
+
     }
+    
 
     .about {
         display: block;

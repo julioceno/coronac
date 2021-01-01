@@ -7,7 +7,7 @@ setTimeout( () => {
 
     popupContainer.style.display ="flex"
     testExplanation.style.display ="flex"
-},1200)
+},700)
 
 function informationDataFunction() {
     popupContainer.style.display ="flex"
@@ -35,6 +35,7 @@ function validate(event) {
         window.location.href= "#header"
     }
 }
+
 
 const comeBackAbout = document.getElementById('come-back-about')
 
