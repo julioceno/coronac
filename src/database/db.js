@@ -5,12 +5,12 @@ async function connect() {
         return global.connection
 
     const connection = await mysql.createConnection({
-        host: 'localhost',
-        user: 'root',
-        password: '',
-        database: 'coronac'
+        host: 'remotemysql.com',
+        user: 'ShqdGdGF8B',
+        password: '4CUdId3Gay',
+        database: 'ShqdGdGF8B'
     })   
-    console.log('conectou')
+    console.log('ready!')
     global.connection = connection
 
     return connection

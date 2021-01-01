@@ -155,6 +155,8 @@ main {
     .about {
         display: block;
         font-size: clamp(1.06rem, 1.3vw, 1.3rem);
+        word-wrap: break-word; 
+        width: 15rem;
 
     }
     

@@ -72,79 +72,41 @@
 
         <div class="diagnostics">
           
-            <div class="diagnostic" onclick="getId(1)">
+          {% for result in results %}
+
+            <div class="diagnostic" onclick="getId({{result.id}})">
           
           
               <div class="data">
-              <img src=".//images/woman.svg" alt="" />
+                
+                {% if result.sex === "Feminino" %} 
+                <img src="/images/woman.png" alt="">
+                {% else %}
+                <img src="/images/man.png" alt="">
+                {% endif %}
+
 
               <div class="informations">
-                <p class="name">Carla</p>
-                <p class="sex">Sexo: Feminino</p>
-                <p class="year-old">Idade: 15</p>
-                <p class="about">Sobre: Meu nome é Carla, tenho 15 anos e acho que estou com covid-19. bla bka ta ligado como  Sobre: Meu nome é Carla, tenho 15 anos e acho que estou com covid-19. bla bka ta ligado como  </p>
+                <p class="name">{{ result.firstName }}</p>
+                <p class="sex">Sexo: {{ result.sex }}</p>
+                <p class="year-old">Idade: {{ result.date }}</p>
+                <p class="about">Sobre:  {{ result.about }}  </p>
               </div>
             </div>
 
             <div class="right">
                 
-              <div class="id">#1</div>
+              <div class="id">#{{result.id}}</div>
 
-              <div class="sympthons">
-                <span>3 / 4</span>
+              <div class="sympthons" style="{{result.diagnosticColor}}">
+                <span>{{ result.amountSymptoms }} / 10</span>
               </div>
 
             </div>
 
           </div>
 
-          <div class="diagnostic" onclick="getId(2)">
-          
-            <div class="data">
-            <img src=".//images/man.svg" alt="" />
-
-            <div class="informations">
-              <p class="name">Jõao</p>
-              <p class="sex">Sexo: Masculino</p>
-              <p class="year-old">Idade: 15</p>
-            </div>
-          </div>
-
-          <div class="right">
-              
-            <div class="id">#2</div>
-
-            <div class="sympthons" style="background-color:  #FF748E;">
-              <span>9 / 4</span>
-            </div>
-
-          </div>
-
-        </div>
-
-        <div class="diagnostic" onclick="getId(3)">
-          
-            <div class="data">
-            <img src=".//images/man.svg" alt="" />
-
-            <div class="informations">
-              <p class="name">Marcos</p>
-              <p class="sex">Sexo: Masculino</p>
-              <p class="year-old">Idade: 45</p>
-            </div>
-          </div>
-
-          <div class="right">
-              
-            <div class="id">#3</div>
-
-            <div class="sympthons" style="background-color:  #fddb3a;">
-              <span>6 / 4</span>
-            </div>
-
-          </div>
-
-        </div> 
+          {% endfor %}
 
         </div>
 

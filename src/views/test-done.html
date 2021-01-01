@@ -85,7 +85,7 @@
 
 
                        <div class="data-user">
-                        <p class="name">{{name}}</p>
+                        <p class="name">{{ name }}</p>
                         <p class="year-old">Idade: {{ date }}</p>
                         <p class="sex ">Sexo: {{ sex }}</p>
                         <p class="about">Sobre: {{ about }}</p>
@@ -93,15 +93,14 @@
 
                 </div>
 
-                <form class="delete-test" onsubmit="deleteTest(event)" method="POST">
-                    <input type="hidden" name="id" value="{{id}}">
+                <form class="delete-test" action="/delete-test/{{id}}?_method=DELETE" onsubmit="deleteTest(event)" method="POST" >
                     <input type="submit" value="">
                 </form>
 
               </header>
               <hr class="line">
 
-              <input type="button" class="view-symptoms" value="Visualizar os sintomas"  onclick="viewSymptoms()" style:hover="red">
+              <input type="button" class="view-symptoms" value="Visualizar os sintomas"  onclick="viewSymptoms()">
 
               <div class="symptoms animate-up " id="symptoms">
 

@@ -17,7 +17,7 @@ app
 
 .use(express.urlencoded({ extended: true }))
 .use(express.static('public'))
-.use(express.static('public'))
+.use(methodOverride('_method'))
 .use(cors())
 
 
@@ -30,5 +30,8 @@ app
 .get('/test-done/:id', routes.testDone)
 
 .post('/save-test', routes.saveTest)
+
+
+.delete('/delete-test/:id', routes.deleteTest)
 
 .listen(process.env.PORT || 3000)

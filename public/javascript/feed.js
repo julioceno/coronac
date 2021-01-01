@@ -2,5 +2,6 @@ const diagnostic = document.querySelector('.diagnostic')
 
 
 function getId(id) {
-    alert(id)
+
+    window.location.href = `/test-done/${id}`
 }

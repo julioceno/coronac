@@ -59,8 +59,46 @@ module.exports = {
 
     },
 
-    feed(req, resp) {
-        return resp.render('feed.html')
+    async feed(req, resp) {
+        try {
+
+            const results = await databaseinteractions.getData('SELECT * FROM testfeed')
+
+            results.forEach( test => {
+
+                 //  Aqui eu faço a contagem de sim que ele marcou
+              
+                test.firstName = test.name.split(' ')[0]
+             
+              let amountSymptoms = 0
+             const symptoms = (test.symptoms).split(',')
+             
+             symptoms.forEach((e) => {
+ 
+                 if (e.trim() !== 'no')
+                 amountSymptoms += 1
+             })
+ 
+             // Dependendo de quantas caixinhas ele marcou ele vai receber uma mensagem lá no formulário.
+             test.amountSymptoms = amountSymptoms
+             if (amountSymptoms <= 4 ) {
+                 test.diagnosticColor = style="background-color:#28DF99"
+             } else if (amountSymptoms <= 7){
+                 test.diagnosticColor = style="background-color:#fddb3a"
+             } else {
+                 test.diagnosticColor = style="background-color:#FF748E"
+             }
+            })
+ 
+            // Deixando os últimos testes em primeiro 
+            results.reverse()
+
+            return resp.render('feed.html', { results })
+        } catch(err) {
+            console.log(err)
+        }
+        
+        
     },
 
     async testDone(req, resp) {
@@ -68,7 +106,6 @@ module.exports = {
         try {
             const dataTestFeed = await databaseinteractions.getData(`SELECT * FROM testfeed where id = ${id}`)
             const result = dataTestFeed[0]
-            console.log(result)
 
             // Aqui eu faço a contagem de sim que ele marcou
             let amountSymptoms = 0
@@ -140,9 +177,7 @@ module.exports = {
                 databaseinteractions.registerDatabaseFeed({
                     name: field.name,
                     about: field.about ,
-                    date: formattedDate || 0 ,
-                    email: field.email,
-                    whatsapp: field.whatsapp,
+                    yearold: formattedDate || 0 ,
                     sex: field.sex,
                     symptoms: symptoms
                 })
@@ -150,7 +185,7 @@ module.exports = {
               
               databaseinteractions.registerDatabase({
                   name: field.name,
-                  date: formattedDate || 0 ,
+                  yearold: formattedDate || 0 ,
                   email: field.email,
                   whatsapp: field.whatsapp,
                   sex: field.sex,
@@ -166,5 +201,20 @@ module.exports = {
         }
 
     },  
+
+
+    // DELETE 
+
+    async deleteTest(req, resp) {
+        const id = (req.params).id
+
+        try {
+            await databaseinteractions.deleteTest(id)
+
+            resp.redirect('/feed')
+        } catch(e) {
+
+        }
+    }
 
 }
