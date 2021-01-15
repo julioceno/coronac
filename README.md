@@ -36,7 +36,7 @@ ___
 
 ___
 
-**Como se tudo isso já não fosse o suficiente tem uma parte de dicas de como se cuidar na pandemia**
+**As if all of that wasn't enough, there are some tips on how to take care of yourself in the pandemic.**
 
 ![page-take-care](https://github.com/julioceno/coronac/blob/master/images-readme/page-take-care.png)
 
